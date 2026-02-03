@@ -6,7 +6,7 @@ media_folder: "images"
 public_folder: "/images"
 
 site_url: ""
-logo_url: "/images/logo.png" # opzionale
+logo_url: "/polodelleeta.png" # opzionale
 
 collections:
   - name: "posts"
