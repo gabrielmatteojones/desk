@@ -21,3 +21,19 @@ collections:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
+-  name: "pages"
+    label: "Pagine"
+    label_singular: "Pagina"
+    folder: "/" # Le pagine solitamente stanno nella root del sito
+    create: true # Questo abilita il tasto per creare nuove pagine
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    filter: # Importante: evita che il CMS provi a modificare file che non sono pagine (es. config.yml)
+      field: "layout"
+      value: "page"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "Esempio: /nome-pagina/" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
