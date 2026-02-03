@@ -1,12 +1,12 @@
 backend:
   name: git-gateway
-  branch: master   # cambia se usi master o altro branch
+  branch: master  # Assicurati che sia 'master' e non 'main' sul tuo repository
 
 media_folder: "images"
 public_folder: "/images"
 
 site_url: ""
-logo_url: "/polodelleeta.png" # opzionale
+logo_url: "/polodelleeta.png"
 
 collections:
   - name: "posts"
@@ -21,15 +21,16 @@ collections:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Data", name: "date", widget: "datetime" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
--  name: "pages"
+
+  - name: "pages"
     label: "Pagine"
     label_singular: "Pagina"
-    folder: "/" # Le pagine solitamente stanno nella root del sito
-    create: true # Questo abilita il tasto per creare nuove pagine
+    folder: "./"
+    create: true
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
-    filter: # Importante: evita che il CMS provi a modificare file che non sono pagine (es. config.yml)
+    filter:
       field: "layout"
       value: "page"
     fields:
