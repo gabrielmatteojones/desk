@@ -2,14 +2,12 @@
 <html>
   <head>
     <title>{{ page.title }}</title>
-
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/style.css" />
-<link rel="stylesheet" type="text/css" href="{{ site.url }}/stylex.css" />
-
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.17.2/dist/css/bootstrap-italia.min.css" />
+      <link rel="stylesheet" type="text/css" href="{{ site.url }}/style.css" />
+      <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylex.css" />
   </head>
-
   <body>
-    
+  
     
     
     
@@ -45,7 +43,7 @@
 
 <button type="button" class="btn btn-primary">
 <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M329-490h302v-70H329v70Zm0 130h302v-70H329v70Zm0 130h182v-70H329v70ZM229-59q-35.78 0-63.39-26.91Q138-112.83 138-150v-660q0-37.59 27.61-64.79Q193.22-902 229-902h364l230 228v524q0 37.17-27.91 64.09Q767.19-59 731-59H229Zm337-590h165L566-810v161Z"/></svg>
-  <span class="mr-2"><a href="/area-personale/">Area Personale</a></span>
+  <span class="mr-2"><a href="/area-personale/">Utente: GABRIEL JONES JABW</a></span>
                   <div class="icon-wrapper">
                 </div></button>
   
@@ -121,30 +119,21 @@
                   <li class="nav-item"><a class="nav-link" href="{{ site.url }}/"><span><b>Home</b></span></a></li>
                   <li class="nav-item"><a class="nav-link" href="{{ site.url }}/biblioteca/"><span><b>Biblioteca Personale</b></span></a></li>
                   <li class="nav-item"><a class="nav-link" href="{{ site.url }}/archivio/"><span><b>Archivio</b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}//"><span><b>Biblioteca</b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}//"><span><b>Biblioteca</b></span></a></li>
-                  <li class="nav-item menu-dropdown-simple-wrapper">
-                    <a class="nav-link dropdown-toggle" role="button" href="#" data-toggle="dropdown" aria-expanded="false" id="mainNavDropdown4">Didattica</a>
-                    <div class="dropdown-menu menu-dropdown dl-submenu menu-dropdown-simple" aria-labelledby="mainNavDropdown4" data-element="teaching-submenu">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBiblioteca" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <span><b>Biblioteca</b></span>
+                      <svg class="icon icon-xs"><use href="{{ site.baseurl }}/sprites.svg#it-expand"></use></svg>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownBiblioteca">
                       <div class="link-list-wrapper">
                         <ul class="link-list">
-                          <li class="menu-title">
-                            <div class="h3"><a href="#" class="list-item" data-element="overview">Panoramica</a></div>
-                          </li>
-                          <li>
-                            <a href="#" class="list-item">Offerta formativa</a>
-                          </li>
-                          <li>
-                            <a href="#" class="list-item">Le schede didattiche</a>
-                          </li>
-                          <li>
-                            <a href="#" class="list-item">I progetti delle classi</a>
-                          </li>
+                          <li><a class="list-item" href="{{ site.url }}/biblioteca/scopri-di-piu"><span>Scopri di più</span></a></li>
+                          <li><a class="list-item" href="{{ site.url }}/biblioteca/servizi"><span>Servizi</span></a></li>
+                          <li><a class="list-item" href="{{ site.url }}/biblioteca/contatti"><span>Contatti</span></a></li>
                         </ul>
                       </div>
                     </div>
-                  </li>
-                
+                  </li>                
                 
                 
                 
