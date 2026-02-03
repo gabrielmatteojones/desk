@@ -5,17 +5,41 @@
       <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.17.2/dist/css/bootstrap-italia.min.css" />
       <link rel="stylesheet" type="text/css" href="{{ site.url }}/style.css" />
       <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylex.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<style>
+/* Applica lo stile a tutta la pagina */
+body {
+    /* Impostiamo l'Atkinson come font principale */
+    font-family: 'Atkinson Hyperlegible Mono', monospace;
+    
+    /* Parametri fondamentali per la leggibilità DSA */
+    font-size: 18px;            /* Una dimensione leggibile, non scendere sotto i 16px */
+    line-height: 1.6;           /* Aumenta lo spazio tra le righe per non "perdere il segno" */
+    letter-spacing: 0.03em;     /* Aumenta leggermente lo spazio tra le lettere */
+    word-spacing: 0.1em;        /* Aumenta lo spazio tra le parole */
+    
+    /* Colori per ridurre l'affaticamento visivo */
+    color: #222222;             /* Grigio molto scuro (meno aggressivo del nero puro) */
+    background-color: #fdfdfd;  /* Bianco sporco/crema (riduce l'effetto abbagliamento) */
+    
+    /* Ottimizzazione rendering del font */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Opzionale: Se vuoi usare PT Sans per i titoli (H1, H2, ecc.) per staccare */
+h1, h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+</style>
+
   </head>
   <body>
-  
-    
-    
-    
-    
-    
-    
-    
-    
     <header class="it-header-wrapper">
   <div class="it-header-slim-wrapper">
   <div class="container">
