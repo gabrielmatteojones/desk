@@ -25,7 +25,7 @@ collections:
   - name: "pages"
     label: "Pagine"
     label_singular: "Pagina"
-    folder: "_pages"
+    folder: "/it/"
     create: true
     slug: "{{slug}}"
     extension: "md"
