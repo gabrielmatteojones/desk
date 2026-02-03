@@ -1,0 +1,13 @@
+# Protegge una singola pagina
+/segreta.html
+  Basic-Auth: mario:1234
+
+# Protegge tutte le pagine di una cartella
+/privata/*
+  Basic-Auth: mario:1234
+
+# Header generali per tutto il sito (opzionale)
+/*
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
