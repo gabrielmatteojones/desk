@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master  # Assicurati che sia 'master' e non 'main' sul tuo repository
+  branch: master
 
 media_folder: "images"
 public_folder: "/images"
@@ -25,14 +25,11 @@ collections:
   - name: "pages"
     label: "Pagine"
     label_singular: "Pagina"
-    folder: ""
+    folder: "_pages"
     create: true
     slug: "{{slug}}"
     extension: "md"
     format: "frontmatter"
-    filter:
-      field: "layout"
-      value: "page"
     fields:
       - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
       - { label: "Titolo", name: "title", widget: "string" }
