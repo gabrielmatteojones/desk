@@ -1,15 +1,15 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Area Socio Educativa
+permalink: /areasocioeducativa/
 ---
 
-Some information about you!
+# Area Socio Educativa
 
-### More Information
+Benvenuti nelll'area _socio educativa_, dove i laboratori, attività & programmi prendono forma!
+### Pagine correlate
+[Giochi e attività](giochi/)
 
-A place to include any other types of information that you'd like to include about yourself.
+[Esame](esamepedagogia/)
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[Piano Didattico 1° elementare](pianodidattico1elementare/)
