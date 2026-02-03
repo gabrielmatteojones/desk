@@ -34,7 +34,7 @@ evidenza: https://gabrielmatteojones.github.io/desk/polostretto.png
 theme: minima
 plugins:
   - jekyll-feed
-buk: https://gabrielmatteojones.github.io/desk/
+buk: https://gabrielmatteojones.github.io/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
