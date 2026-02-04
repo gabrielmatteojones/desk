@@ -1,0 +1,95 @@
+---
+layout: default
+title: Fatturazioni
+permalink: /fatturazioni/
+---
+
+<div class="container my-5">
+
+<h1>Fatturazioni</h1>
+
+<input type="text" id="filterInput" class="form-control mt-4" placeholder="Filtra fatture">
+
+<table class="table table-hover mt-3">
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Titolo</th>
+      <th>Cliente</th>
+      <th class="text-right">Importo</th>
+    </tr>
+  </thead>
+  <tbody>
+
+  {% assign totale = 0 %}
+  {% for f in site.data.fatture %}
+    {% assign totale = totale | plus: f.importo %}
+    <tr class="fattura"
+      data-bs-toggle="modal"
+      data-bs-target="#fatturaModal"
+      data-titolo="{{ f.titolo }}"
+      data-cliente="{{ f.cliente }}"
+      data-data="{{ f.data | date: "%d/%m/%Y" }}"
+      data-importo="{{ f.importo }}"
+      data-tassato="{% if f.tassato %}Sì{% else %}No{% endif %}"
+      data-note="{{ f.note }}"
+      data-doc="{{ f.documento }}">
+      <td>{{ f.data | date: "%d/%m/%Y" }}</td>
+      <td>{{ f.titolo }}</td>
+      <td>{{ f.cliente }}</td>
+      <td class="text-right importo">{{ f.importo }}</td>
+    </tr>
+  {% endfor %}
+
+  </tbody>
+</table>
+
+<div class="alert alert-info text-right">
+  <strong>Totale entrate:</strong>
+  <span id="totale">{{ totale }}</span>
+</div>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="fatturaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="mTitolo"></h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <table class="table table-borderless">
+          <tr><th>Cliente</th><td id="mCliente"></td></tr>
+          <tr><th>Data</th><td id="mData"></td></tr>
+          <tr><th>Importo</th><td id="mImporto"></td></tr>
+          <tr><th>Tassato</th><td><span id="mTassato" class="badge"></span></td></tr>
+          <tr><th>Note</th><td id="mNote"></td></tr>
+          <tr><th>Documento</th><td id="mDoc"></td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.8.0/dist/js/bootstrap-italia.bundle.min.js"></script>
+
+<script>
+function euro(v){return new Intl.NumberFormat('it-IT',{style:'currency',currency:'EUR'}).format(v)}
+
+document.querySelectorAll('.importo').forEach(i=>i.textContent=euro(i.textContent))
+document.getElementById('totale').textContent=euro(document.getElementById('totale').textContent)
+
+document.querySelectorAll('.fattura').forEach(r=>{
+  r.addEventListener('click',()=>{
+    mTitolo.textContent=r.dataset.titolo
+    mCliente.textContent=r.dataset.cliente
+    mData.textContent=r.dataset.data
+    mImporto.textContent=euro(r.dataset.importo)
+    mNote.textContent=r.dataset.note||'—'
+    mTassato.textContent=r.dataset.tassato
+    mTassato.className='badge '+(r.dataset.tassato==='Sì'?'badge-success':'badge-warning')
+    mDoc.innerHTML=r.dataset.doc?`<a href="${r.dataset.doc}" target="_blank">Apri documento</a>`:'—'
+  })
+})
+</script>
