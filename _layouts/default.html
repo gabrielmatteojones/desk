@@ -183,18 +183,22 @@ h1, h2, h3 {
 <div id="main" role="main" class="container">
 {{ content }}
 
-<script>
-if (!window.netlifyIdentity || !window.netlifyIdentity.currentUser()) {
-  window.location.href = "{{ site.url }}/admin/#/";
-}
-</script>
 
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
 <script>
 if (window.netlifyIdentity) {
+  netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.location.href = "{{ site.url }}/admin/#/";
+    }
+  });
+
   netlifyIdentity.init();
 }
-</script><!--
+</script>
+  
+  <!--
   <script>
     const passwordCorretta = "5587!"; // cambia qui la password
     const inserita = prompt("Inserisci la password:");
