@@ -5,9 +5,16 @@
   tassato: true
   note: Gestione rapporti clienti - Pagamento unico
 
-- titolo: Parrocchia Centrale di Fontanafredda
+- titolo: Parrocchia Centrale di Fontanafredda - Area oratorio
   cliente: Diocesi Pordenonese
   data: 2026-01-29
   importo: 120
   tassato: false
   note: 120 dei mesi tra novembre & gennaio,tassazione esclusa, rimborsi spese. - Pagamento Trimensile
+
+- titolo: Regione FVG
+  cliente: Regione FVG
+  data: 2025-05-29
+  importo: archiviato
+  tassato: false
+  note: Pagamento Unico
