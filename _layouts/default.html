@@ -181,8 +181,28 @@ h1, h2, h3 {
    </div>
 </section>
 <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+{{ content }}
+
+<script>
+if (!window.netlifyIdentity || !window.netlifyIdentity.currentUser()) {
+  window.location.href = "{{ site.url }}/admin/#/";
+}
+</script>
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+if (window.netlifyIdentity) {
+  netlifyIdentity.init();
+}
+</script>
+  <script>
+    const passwordCorretta = "5587!"; // cambia qui la password
+    const inserita = prompt("Inserisci la password:");
+    if (inserita !== passwordCorretta) {
+      alert("Password errata!");
+      window.location.href = "index.html"; // reindirizza se sbagliata
+    }
+  </script>    </div>
 
 <footer class="it-footer">
   <div class="it-footer-main">
