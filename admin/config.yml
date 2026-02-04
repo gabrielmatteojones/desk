@@ -35,3 +35,22 @@ collections:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string", hint: "Esempio: /nome-pagina/" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "fatture"
+    label: "Fatturazioni"
+    files:
+      - label: "Entrate"
+        name: "entrate"
+        file: "_data/fatture.yml"
+        fields:
+          - label: "Fatture"
+            name: "fatture"
+            widget: "list"
+            fields:
+              - { label: Titolo, name: titolo, widget: string }
+              - { label: Cliente, name: cliente, widget: string }
+              - { label: Data, name: data, widget: date }
+              - { label: Importo, name: importo, widget: number }
+              - { label: Tassato, name: tassato, widget: boolean }
+              - { label: Note, name: note, widget: string, required: false }
+              - { label: Documento, name: documento, widget: string, required: false }
