@@ -3,7 +3,9 @@ layout: page
 title: Scheda Fondazione Opera Sacra Famiglia
 permalink: /schede/osf/
 ---
-### **O﻿rario Lezioni**
+
+Orario delle lezioni FOSF1
+
 | lunedì          | martedì         | mercoledì        | giovedì          | venerdì         |
 |:----------------|:----------------|:-----------------|:-----------------|:----------------|
 | Fantin - A15    | Fregolent - A16 | Verardo - A15    | Scodellaro - A13 | Fantin - A15    |
