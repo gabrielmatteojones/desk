@@ -6,7 +6,7 @@ permalink: /schede/osf/
 
 Orario delle lezioni FOSF1
 
-| lunedì___          | martedì__         | mercoledì___        | giovedì___          | venerdì___         |
+| lunedì          | martedì         | mercoledì        | giovedì          | venerdì         |
 |:----------------|:----------------|:-----------------|:-----------------|:----------------|
 | Fantin    | Fregolent | Verardo    | Scodellaro | Fantin    |
 | Flumian   | Fregolent | Flumian    | Scodellaro | Khawaja   |
