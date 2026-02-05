@@ -24,6 +24,16 @@ Prova scritta con domande teoriche e applicazione pratica a situazioni educative
 **Esito**\
 Valutazione idoneità / non idoneità
 
-
-
 F﻿onte: Archivio RF
+
+
+
+
+
+
+
+A﻿LLEGATI:
+
+1﻿. *[DISPENSA METODO MONTESSORI](http://archve.local/bibliowin/documenti/336829.pdf&jabw)*
+
+*2﻿. [Dispensa Metodologie di educazione base](N)*
