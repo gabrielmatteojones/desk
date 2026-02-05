@@ -11,7 +11,7 @@ permalink: /schede/osf/
 | Cristant - A15  | Fregolent - A15 | Cerne - A15      | Verardo - A15    | Zago - A15      |
 | Khawaja - A15   | Fregolent - A15 | Verardo - A15    | Mazzero - A15    | Fregolent - A16 |
 | Fantin - A15    | Iaccarino - A15 | Scodellaro - A16 | Sanquerin - A16  | Fregolent - A16 |
-| Sanquerin - A16 | Iaccarino - A15 | Scodellaro- A16  | Sanquerin - A16  |                 |
+| Sanquerin - A16 | Iaccarino - A15 | Scodellaro- A16  | Sanquerin - A16  | Comunicazione: Colloqui genitori insegnanti il 27/02 |
 | Sanquerin - A16 | Iaccarino - A15 | Fantin - A15     | Sanquerin - A16  |                 |
 
 [link disponibile a questo link](https://fondazioneosf.wixsite.com/scuola/avvisi)
