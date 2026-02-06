@@ -17,3 +17,4 @@ posts:
     date: "Agosto 2025 - archiviato il 27/08/25"
     link: "/oratorio26/posts/archiviogrest2026/?jabw"
 ---
+{% include registro.html %}
