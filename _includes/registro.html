@@ -216,6 +216,27 @@ th,td{
   {% endfor %}
 </section>
 
+
+
+
+
+
+
+
+      <section id="stream" class="section active">
+        <h2>Stream</h2>
+        {% for post in page.posts %}
+        <div class="post">
+          <a href="{{ site.url }}/?profile-jabw"><div class="avatar"><img src="https://bw.jareads.org/gabriel.png" alt="Italian Trulli"></div></a>
+          <div><a href="{{ site.url }}{{ post.link }}">
+            <strong>Gabriel Jones</strong>
+            <p>{{ post.text }}</p>
+            <small>{{ post.date }}</small>
+          </a></div>
+        </div>
+      {% endfor %}
+      </section>
+
       <!-- ATTIVITÀ -->
       <section id="attivita" class="section">
         <h2>Attività</h2>
