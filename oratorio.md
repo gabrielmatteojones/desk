@@ -1,7 +1,7 @@
 ---
 layout: default
 title: REGISTRO ORATORIO 2026
-permalink: /oratorio26/
+permalink: /oratorio26jabok/
 avatar: "https://bw.jareads.org/gabriel."
 posts:
   - name: "Gabriel Jones"
