@@ -2,7 +2,7 @@
 layout: default
 title: REGISTRO ORATORIO 2026
 permalink: /oratorio26/
-avatar: "https://bw.jareads.org/gabriel.png"
+avatar: "https://bw.jareads.org/gabriel."
 posts:
   - name: "Gabriel Jones"
     text: "Attività febbraio in oratorio"
