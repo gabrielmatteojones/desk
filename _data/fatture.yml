@@ -20,15 +20,15 @@
   note: Pagamento Unico
 
 - titolo: Microsoft Paydment
-  cliente: Gabriel Jones Web Services
+  cliente: Spesa di 94 Euro a favore di microsoft italia
   data: 2025-02-29
   importo: -94$
   tassato: true
-  note: Pagamento Unico - Spesa di 94 Euro a favore di microsoft italia
+  note: Pagamento Unico - Spesa di 94 Euro a favore di microsoft italia - Tassato iva
   
 - titolo: Microsoft Payment
-  cliente: Gabriel Jones Web Services
-  data: 2025-02-29
+  cliente: Pagamento Unico - Spesa di 30 Euro a favore di google italia - Tassato iva
+  data: 2025-05-21
   importo: -30$
   tassato: true
   note: Pagamento Unico - Spesa di 94 Euro a favore di google italia
