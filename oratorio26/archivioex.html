@@ -83,10 +83,10 @@ permalink: /oratorio26/
 
 
 <!-- STREAM -->
+<!-- STREAM -->
 <section id="stream" class="section active">
   <h2>Stream</h2>
 
-  <!-- Lista post -->
   <div class="post" data-content="Nuovo materiale caricato. Contenuto completo del post qui...">
     <div class="avatar">G</div>
     <div>
@@ -104,57 +104,59 @@ permalink: /oratorio26/
       <small>2 febbraio</small>
     </div>
   </div>
-
 </section>
 
-<!-- DETTAGLIO POST (inizialmente nascosto) -->
-<section id="post-detail" class="section">
+<!-- OVERLAY DETTAGLIO POST -->
+<div id="post-detail" class="post-overlay">
   <div class="program-card">
     <strong id="post-author"></strong>
     <p id="post-content"></p>
     <small id="post-date"></small>
     <button class="btn btn-primary mt-3" onclick="closePost()">Chiudi</button>
   </div>
-</section>
-
-<script>
-const posts = document.querySelectorAll('.post');
-const postDetail = document.getElementById('post-detail');
-
-posts.forEach(post=>{
-  post.addEventListener('click', ()=>{
-    const author = post.querySelector('strong').innerText;
-    const content = post.dataset.content;
-    const date = post.querySelector('small').innerText;
-
-    document.getElementById('post-author').innerText = author;
-    document.getElementById('post-content').innerText = content;
-    document.getElementById('post-date').innerText = date;
-
-    document.getElementById('stream').classList.remove('active');
-    postDetail.classList.add('active');
-  });
-});
-
-function closePost(){
-  postDetail.classList.remove('active');
-  document.getElementById('stream').classList.add('active');
-}
-</script>
+</div>
 
 <style>
-/* Dettaglio post come scheda */
-#post-detail .program-card {
+/* Overlay dettagli post */
+.post-overlay {
+  display:none;
+  position:fixed;
+  top:0; left:0; right:0; bottom:0;
+  background:rgba(0,0,0,0.4);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:1000;
+}
+
+.post-overlay .program-card {
+  max-width:600px;
+  width:90%;
   background:#fff;
   border:1px solid #e5e5e5;
   border-radius:16px;
   padding:24px;
 }
-#post-detail button {
-  cursor:pointer;
-}
 </style>
 
+<script>
+const posts = document.querySelectorAll('.post');
+const postOverlay = document.getElementById('post-detail');
+
+posts.forEach(post=>{
+  post.addEventListener('click', ()=>{
+    document.getElementById('post-author').innerText = post.querySelector('strong').innerText;
+    document.getElementById('post-content').innerText = post.dataset.content;
+    document.getElementById('post-date').innerText = post.querySelector('small').innerText;
+
+    postOverlay.style.display = 'flex';
+  });
+});
+
+function closePost(){
+  postOverlay.style.display = 'none';
+}
+</script>
 
       <!-- REGISTRO -->
       <section id="registro" class="section">
