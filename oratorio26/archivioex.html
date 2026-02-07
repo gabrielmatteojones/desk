@@ -97,17 +97,51 @@ body{
 }
 .section.active{display:block}
 
-/* STREAM */
+
+  /* Post come schede */
 .post{
-  display:grid;
-  grid-template-columns:48px 1fr;
-  gap:16px;
+  display:block;
+  background:#f8f9fa;
+  border:1px solid #e5e5e5;
+  border-radius:16px;
   padding:16px;
-  border-radius:14px;
-  background:#f9fafb;
   margin-bottom:16px;
+  box-shadow:0 3px 8px rgba(0,0,0,0.05);
+  transition:0.3s;
 }
-.avatar{
+
+.post:hover{
+  transform:translateY(-3px);
+  box-shadow:0 6px 12px rgba(0,0,0,0.1);
+}
+
+.post .avatar{
+  float:left;
+  margin-right:16px;
+  width:50px;
+  height:50px;
+  font-weight:700;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#2b7de9;
+  color:#fff;
+}
+
+.post-content{
+  overflow:hidden;
+}
+
+.post strong{
+  display:block;
+  margin-bottom:4px;
+}
+
+  
+  
+  
+  
+  .avatar{
   width:48px;height:48px;
   border-radius:50%;
   background:#2b7de9;
@@ -204,35 +238,28 @@ th,td{
     <!-- CONTENUTO -->
     <div>
 
-      <!-- STREAM -->
-      <section id="stream" class="section active">
-        <h2>Stream</h2>
+<section id="stream" class="section active">
+  <h2>Stream</h2>
 
-        <div class="post">
-          <a href="{{ site.url }}/?profile-jabw"><div class="avatar"><img src="https://bw.jareads.org/gabriel.png" alt="Italian Trulli"></div></a>
-          <div><a href="{{ site.url }}/oratorio26/posts/attivitafebbraioinoratorio/?jabw1-2-26">
-            <strong>Gabriel Jones</strong>
-            <p>Attività febbraio in oratorio</p>
-            <small>1 febbraio</small>
-          </a></div>
-        </div>
-        <div class="post">
-          <a href="{{ site.url }}/?profile-jabw"><div class="avatar"><img src="https://bw.jareads.org/gabriel.png" alt="Italian Trulli"></div></a>
-          <div><a href="{{ site.url }}/oratorio26/posts/propostegrest2026/?jabw">
-            <strong>Gabriel Jones</strong>
-            <p>Proposte grest 2026</p>
-            <small>Novembre 2025 - in corso</small>
-          </a></div>
-        </div>
-        <div class="post">
-          <a href="{{ site.url }}/?profile-jabw"><div class="avatar"><img src="https://bw.jareads.org/gabriel.png" alt="Italian Trulli"></div></a>
-          <div><a href="{{ site.url }}/oratorio26/posts/archiviogrest2026/?jabw">
-            <strong>Gabriel Jones</strong>
-            <p>Archivio grest 2026</p>
-            <small>Agosto 2025 - **archiviato il 27/08/25**</small>
-          </a></div>
-        </div>
-    </section>
+  <div class="post">
+    <div class="avatar">G</div>
+    <div class="post-content">
+      <strong>Gabriel Jones</strong>
+      <p>Nuovo materiale caricato.</p>
+      <small>1 febbraio</small>
+    </div>
+  </div>
+
+  <div class="post">
+    <div class="avatar">L</div>
+    <div class="post-content">
+      <strong>Lara Verdi</strong>
+      <p>Compito corretto e commentato.</p>
+      <small>2 febbraio</small>
+    </div>
+  </div>
+</section>
+
 
       <!-- ATTIVITÀ -->
       <section id="attivita" class="section">
