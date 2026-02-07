@@ -83,7 +83,6 @@ permalink: /oratorio26/
 
 
 <!-- STREAM -->
-<!-- STREAM -->
 <section id="stream" class="section active">
   <h2>Stream</h2>
 
@@ -91,7 +90,7 @@ permalink: /oratorio26/
     <div class="avatar">G</div>
     <div>
       <strong>Gabriel Jones</strong>
-      <p>Nuovo materiale caricato.</p>
+      <p class="full-content">Nuovo materiale caricato. Contenuto completo del post qui...</p>
       <small>1 febbraio</small>
     </div>
   </div>
@@ -100,27 +99,27 @@ permalink: /oratorio26/
     <div class="avatar">M</div>
     <div>
       <strong>Marco Rossi</strong>
-      <p>Appunti della lezione di matematica disponibili.</p>
+      <p class="full-content">Appunti della lezione di matematica disponibili. Tutti i dettagli del materiale...</p>
       <small>2 febbraio</small>
     </div>
   </div>
 </section>
 
-<!-- DETTAGLIO POST -->
+<!-- DETTAGLIO POST COME SCHEDE -->
 <section id="post1" class="section">
   <div class="program-card">
-    <strong>Gabriel Jones</strong>
-    <p>Nuovo materiale caricato. Contenuto completo del post qui...</p>
-    <small>1 febbraio</small>
+    <strong id="post1-author"></strong>
+    <p id="post1-content"></p>
+    <small id="post1-date"></small>
     <button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post1')">X</button>
   </div>
 </section>
 
 <section id="post2" class="section">
   <div class="program-card">
-    <strong>Marco Rossi</strong>
-    <p>Appunti della lezione di matematica disponibili. Tutti i dettagli...</p>
-    <small>2 febbraio</small>
+    <strong id="post2-author"></strong>
+    <p id="post2-content"></p>
+    <small id="post2-date"></small>
     <button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post2')">X</button>
   </div>
 </section>
@@ -128,31 +127,30 @@ permalink: /oratorio26/
 <script>
 const posts = document.querySelectorAll('.post');
 
-posts.forEach(post=>{
+posts.forEach(post => {
   post.addEventListener('click', ()=>{
-    // nascondi tutte le schede
-    document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-    // mostra la scheda del post cliccato
-    const target = post.dataset.target;
-    document.getElementById(target).classList.add('active');
+    const targetId = post.dataset.target;
+
+    // riempi dinamicamente la scheda con lo stesso contenuto
+    document.getElementById(`${targetId}-author`).innerText = post.querySelector('strong').innerText;
+    document.getElementById(`${targetId}-content`).innerText = post.querySelector('.full-content').innerText;
+    document.getElementById(`${targetId}-date`).innerText = post.querySelector('small').innerText;
+
+    // nascondi tutte le schede e mostra solo quella del post
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(targetId).classList.add('active');
   });
 });
 
 function backToStream(postId){
-  // nascondi la scheda post
   document.getElementById(postId).classList.remove('active');
-  // mostra lo stream
   document.getElementById('stream').classList.add('active');
 }
 </script>
 
 <style>
-.section{
-  display:none;
-}
-.section.active{
-  display:block;
-}
+.section{ display:none; }
+.section.active{ display:block; }
 .program-card{
   background:#f8f9fa;
   border:1px solid #e5e5e5;
@@ -160,11 +158,8 @@ function backToStream(postId){
   padding:20px;
   margin-top:16px;
 }
-.post{
-  cursor:pointer;
-}
+.post{ cursor:pointer; }
 </style>
-
 
 
 
