@@ -98,9 +98,9 @@ body{
 .section.active{display:block}
 
 
-  /* Post come schede */
+<style>
+/* Post come schede */
 .post{
-  display:block;
   background:#f8f9fa;
   border:1px solid #e5e5e5;
   border-radius:16px;
@@ -116,28 +116,30 @@ body{
 }
 
 .post .avatar{
-  float:left;
-  margin-right:16px;
   width:50px;
   height:50px;
-  font-weight:700;
-  display:grid;
-  place-items:center;
   border-radius:50%;
   background:#2b7de9;
   color:#fff;
+  display:inline-grid;
+  place-items:center;
+  font-weight:700;
+  margin-right:12px;
+  vertical-align:top;
 }
 
 .post-content{
-  overflow:hidden;
+  display:inline-block;
+  max-width:calc(100% - 62px); /* lascia spazio all’avatar */
 }
 
 .post strong{
   display:block;
   margin-bottom:4px;
 }
+</style>
 
-  
+
   
   
   
