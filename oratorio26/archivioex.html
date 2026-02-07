@@ -83,11 +83,10 @@ permalink: /oratorio26/
 
 
 <!-- STREAM -->
-<!-- STREAM -->
 <section id="stream" class="section active">
   <h2>Stream</h2>
 
-  <div class="post" data-content="Nuovo materiale caricato. Contenuto completo del post qui...">
+  <div class="post" data-target="post1">
     <div class="avatar">G</div>
     <div>
       <strong>Gabriel Jones</strong>
@@ -96,7 +95,7 @@ permalink: /oratorio26/
     </div>
   </div>
 
-  <div class="post" data-content="Appunti della lezione di matematica disponibili.">
+  <div class="post" data-target="post2">
     <div class="avatar">M</div>
     <div>
       <strong>Marco Rossi</strong>
@@ -106,58 +105,43 @@ permalink: /oratorio26/
   </div>
 </section>
 
-<!-- OVERLAY DETTAGLIO POST -->
-<div id="post-detail" class="post-overlay">
+<!-- DETTAGLIO POST COME SCHEDE -->
+<section id="post1" class="section">
   <div class="program-card">
-    <strong id="post-author"></strong>
-    <p id="post-content"></p>
-    <small id="post-date"></small>
-    <button class="btn btn-primary mt-3" onclick="closePost()">Chiudi</button>
+    <strong>Gabriel Jones</strong>
+    <p>Nuovo materiale caricato. Contenuto completo del post qui...</p>
+    <small>1 febbraio</small>
   </div>
-</div>
+</section>
 
-<style>
-/* Overlay dettagli post */
-.post-overlay {
-  display:none;
-  position:fixed;
-  top:0; left:0; right:0; bottom:0;
-  background:rgba(0,0,0,0.4);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  z-index:1000;
-}
-
-.post-overlay .program-card {
-  max-width:600px;
-  width:90%;
-  background:#fff;
-  border:1px solid #e5e5e5;
-  border-radius:16px;
-  padding:24px;
-}
-</style>
+<section id="post2" class="section">
+  <div class="program-card">
+    <strong>Marco Rossi</strong>
+    <p>Appunti della lezione di matematica disponibili. Tutti i dettagli...</p>
+    <small>2 febbraio</small>
+  </div>
+</section>
 
 <script>
-const posts = document.querySelectorAll('.post');
-const postOverlay = document.getElementById('post-detail');
+// Gestione apertura post come scheda
+const postElements = document.querySelectorAll('.post');
 
-posts.forEach(post=>{
+postElements.forEach(post=>{
   post.addEventListener('click', ()=>{
-    document.getElementById('post-author').innerText = post.querySelector('strong').innerText;
-    document.getElementById('post-content').innerText = post.dataset.content;
-    document.getElementById('post-date').innerText = post.querySelector('small').innerText;
-
-    postOverlay.style.display = 'flex';
+    // nascondi tutte le schede (incluso stream)
+    document.querySelectorAll('.section').forEach(sec=>{
+      sec.classList.remove('active');
+    });
+    // mostra la scheda relativa al post cliccato
+    const targetId = post.dataset.target;
+    document.getElementById(targetId).classList.add('active');
   });
 });
-
-function closePost(){
-  postOverlay.style.display = 'none';
-}
 </script>
 
+
+
+      
       <!-- REGISTRO -->
       <section id="registro" class="section">
         <h2>Registro</h2>
