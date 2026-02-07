@@ -4,6 +4,55 @@ title: REGISTRO ORATORIO 2026
 permalink: /oratorio26/
 ---
 <style>
+/* Post in stile Classroom */
+.post{
+  display:flex;
+  background:#f8f9fa;
+  border:1px solid #e5e5e5;
+  border-radius:12px;
+  padding:12px;
+  margin-bottom:12px;
+}
+
+.post .avatar{
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  background:#2b7de9;
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:700;
+  margin-right:12px;
+}
+
+.post-content{
+  flex:1;
+}
+
+.post-content strong{
+  display:block;
+  font-size:16px;
+  margin-bottom:4px;
+}
+
+.post-content p{
+  margin:0;
+  font-size:14px;
+  color:#333;
+}
+
+.post-content small{
+  display:block;
+  color:#666;
+  font-size:12px;
+  margin-top:4px;
+}
+</style>
+
+
+<style>
 body{
   margin:0;
   font-family:'Atkinson Hyperlegible Mono', monospace;
@@ -98,48 +147,8 @@ body{
 .section.active{display:block}
 
 
-.post{
-  background:#f8f9fa;
-  border:1px solid #e5e5e5;
-  border-radius:16px;
-  padding:16px;
-  margin-bottom:16px;
-  box-shadow:0 3px 8px rgba(0,0,0,0.05);
-  transition:0.3s;
-}
 
-.post:hover{
-  transform:translateY(-3px);
-  box-shadow:0 6px 12px rgba(0,0,0,0.1);
-}
-
-.post .avatar{
-  width:50px;
-  height:50px;
-  border-radius:50%;
-  background:#2b7de9;
-  color:#fff;
-  display:inline-grid;
-  place-items:center;
-  font-weight:700;
-  margin-right:12px;
-  vertical-align:top;
-}
-
-.post-content{
-  display:inline-block;
-  max-width:calc(100% - 62px); /* lascia spazio all’avatar */
-}
-
-.post strong{
-  display:block;
-  margin-bottom:4px;
-}
-
-
-  
-  
-  
+    
   .avatar{
   width:48px;height:48px;
   border-radius:50%;
