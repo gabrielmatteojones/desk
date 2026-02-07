@@ -59,26 +59,8 @@ permalink: /oratorio26/
     <div class="avatar">G</div>
     <div class="post-content">
       <strong>Gabriel Jones</strong>
-      <p>Nuovo materiale caricato</p>
+      <p>Programma Attività in Oratorio</p>
       <small>1 febbraio</small>
-    </div>
-  </div>
-
-  <div class="post" data-target="post2">
-    <div class="avatar">L</div>
-    <div class="post-content">
-      <strong>Lara Verdi</strong>
-      <p>Compito corretto</p>
-      <small>2 febbraio</small>
-    </div>
-  </div>
-
-  <div class="post" data-target="post3">
-    <div class="avatar">M</div>
-    <div class="post-content">
-      <strong>Marco Neri</strong>
-      <p>Nuova comunicazione</p>
-      <small>3 febbraio</small>
     </div>
   </div>
 
@@ -86,9 +68,9 @@ permalink: /oratorio26/
 
 <!-- SCHEDE POST -->
 <section id="post1" class="section">
-  <h2>Nuovo materiale caricato</h2>
-  <p>07/02/2026 - Gabriel Jones</p>
-  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC...</p>
+  <h2>Programma Oratorio 02/2026</h2>
+  <p>01/02/2026 - Gabriel Jones</p>
+  <p>Proposta per le attività in oratorio a Feb2026</p>
 
   <table>
     <thead>
@@ -102,31 +84,17 @@ permalink: /oratorio26/
     </thead>
     <tbody>
       <tr>
-        <td>Documento di esempio</td>
+        <td>Documento di programmazione</td><button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post1')">X</button>
         <td>PDF</td>
-        <td>Interna</td>
-        <td><a href="/esempio.pdf">Interno</a></td>
-        <td>Amministratore del corso</td>
+        <td>Interno1</td>
+        <td><a href="{{ site.url }}/assets/programmafebbraioinoratorio2026.pdf">Interno</a></td>
+        <td>-</td>
       </tr>
     </tbody>
   </table>
 
-  <button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post1')">X</button>
 </section>
 
-<section id="post2" class="section">
-  <h2>Appunti lezione matematica</h2>
-  <p>07/02/2026 - Marco Rossi</p>
-  <p>Appunti della lezione di matematica disponibili. Tutti i dettagli del materiale...</p>
-  <button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post2')">X</button>
-</section>
-
-<section id="post3" class="section">
-  <h2>Appunti lezione matematica</h2>
-  <p>07/02/2026 - Marco Rossi</p>
-  <p>Appunti della lezione di matematica disponibili. Tutti i dettagli del materiale...</p>
-  <button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post2')">X</button>
-</section>
      
 <script>
 const posts = document.querySelectorAll('.post');
