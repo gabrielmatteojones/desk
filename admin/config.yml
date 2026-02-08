@@ -55,7 +55,7 @@ collections:
               - { label: Note, name: note, widget: string, required: false }
               - { label: Documento, name: documento, widget: string, required: false }
 
-  - name: "pages"
+  - name: "public"
     label: "Pagina pubblica"
     label_singular: "Pagina pubblica"
     folder: "/it/p/"
