@@ -56,9 +56,9 @@ collections:
               - { label: Documento, name: documento, widget: string, required: false }
 
   - name: "pages"
-    label: "Pagine"
-    label_singular: "Pagina"
-    folder: "/it/"
+    label: "Pagina pubblica"
+    label_singular: "Pagina pubblica"
+    folder: "/it/p/"
     create: true
     slug: "{{slug}}"
     extension: "md"
