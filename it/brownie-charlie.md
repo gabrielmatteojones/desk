@@ -1,6 +1,6 @@
 ---
 layout: public
-title: Brownie Charlie
+title: Charlie Brownie
 permalink: /cbrownie/
 ---
 <https://xhamster.com/search/suit+slave?orientations=gay>
