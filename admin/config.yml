@@ -54,3 +54,17 @@ collections:
               - { label: Tassato, name: tassato, widget: boolean }
               - { label: Note, name: note, widget: string, required: false }
               - { label: Documento, name: documento, widget: string, required: false }
+
+  - name: "pages"
+    label: "Pagine"
+    label_singular: "Pagina"
+    folder: "/it/"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "public" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "Esempio: /nome-pagina/" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: public
 title: Brownie Charlie
 permalink: /cbrownie/
 ---
