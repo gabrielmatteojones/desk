@@ -32,3 +32,11 @@
   importo: -30$
   tassato: true
   note: Pagamento Unico - Spesa di 94 Euro a favore di google italia
+
+
+- titolo: Fondazione OSF
+  cliente: Acquisto 5 euro acquisto chiavetta Fondazione OSF
+  data: 2026-02-09
+  importo: 5
+  tassato: true
+  note: Gestione rapporti clienti - Pagamento unico
