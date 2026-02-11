@@ -184,18 +184,23 @@ h1, h2, h3 {
 <div id="main" role="main" class="container">
 {{ content }}
   </div>
-<div id="lista"></div>
+
+
+
+
+
+    <div id="lista"></div>
 
 <script>
-fetch("https://opensheet.elk.sh/196Xv72FwWK-V7rhY6AiSx9jLeCSCkgPAGGZxKQP00Iw/Foglio1")
+fetch("https://opensheet.elk.sh/196Xv72FwWK-V7rhY6AiSx9jLeCSCkgPAGGZxKQP00Iw/Risposte%20del%20modulo%201")
   .then(r => r.json())
   .then(dati => {
     const box = document.getElementById("lista");
     dati.forEach(r => {
       box.innerHTML += `
         <p>
-          <a href="${r.Link}" target="_blank">
-            ${r.Titolo}
+          <a href="${r.URL}" target="_blank">
+            ${r["NOME URL"]}
           </a>
         </p>
       `;
@@ -203,7 +208,7 @@ fetch("https://opensheet.elk.sh/196Xv72FwWK-V7rhY6AiSx9jLeCSCkgPAGGZxKQP00Iw/Fog
   });
 </script>
 
-
+    
 
 
 
