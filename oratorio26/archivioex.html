@@ -66,34 +66,69 @@ permalink: /oratorio26/
 
 </section>
 
-<!-- SCHEDE POST -->
-<section id="post1" class="section">
-  <h2>Programma Oratorio 02/2026</h2>
-  <p>01/02/2026 - Gabriel Jones</p>
-  <p>Proposta per le attività in oratorio a Feb2026</p>
+<!-- STREAM -->
+<section id="stream" class="section active">
+  <h2>Stream</h2>
 
+  {% assign posts_ordinati = site.data.postsR | sort: "data" | reverse %}
+
+  {% for post in posts_ordinati %}
+  <div class="post" data-target="{{ post.id }}">
+    <div class="avatar">{{ post.avatar }}</div>
+    <div class="post-content">
+      <strong>{{ post.autore }}</strong>
+      <p>{{ post.titolo }}</p>
+      <small>{{ post.data | date: "%d/%m/%Y" }}</small>
+    </div>
+  </div>
+  {% endfor %}
+</section>
+
+
+<!-- SCHEDE POST -->
+{% for post in posts_ordinati %}
+<section id="{{ post.id }}" class="section">
+  <h2>{{ post.titolo }}</h2>
+  <p>{{ post.data | date: "%d/%m/%Y" }} - {{ post.autore }}</p>
+  <p>{{ post.descrizione }}</p>
+
+  {% if post.allegati.size > 0 %}
   <table>
     <thead>
       <tr>
         <th>Nome Allegato</th>
-        <th>Tipologia allegato</th>
+        <th>Tipologia</th>
         <th>Fonte</th>
         <th>Accesso</th>
         <th>Note</th>
       </tr>
     </thead>
     <tbody>
+      {% for allegato in post.allegati %}
       <tr>
-        <td>Documento di programmazione</td><button class="btn btn-sm btn-secondary mt-2" onclick="backToStream('post1')">X</button>
-        <td>PDF</td>
-        <td>Interno1</td>
-        <td><a href="{{ site.url }}/assets/programmafebbraioinoratorio2026.pdf">Interno</a></td>
-        <td>-</td>
+        <td>{{ allegato.nome }}</td>
+        <td>{{ allegato.tipo }}</td>
+        <td>{{ allegato.fonte }}</td>
+        <td>
+          <a href="{{ allegato.link }}" target="_blank">
+            Apri
+          </a>
+        </td>
+        <td>{{ allegato.note }}</td>
       </tr>
+      {% endfor %}
     </tbody>
   </table>
+  {% else %}
+  <p>Nessun allegato.</p>
+  {% endif %}
 
+  <br>
+  <button onclick="backToStream('{{ post.id }}')">
+    ← Torna allo stream
+  </button>
 </section>
+{% endfor %}
 
      
 <script>
@@ -113,6 +148,17 @@ function backToStream(postId){
   document.getElementById(postId).classList.remove('active');
   document.getElementById('stream').classList.add('active');
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll('.post').forEach(post => {
+    post.addEventListener('click', () => {
+      const targetId = post.dataset.target;
+
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(targetId).classList.add('active');
+    });
+  });
+});
 </script>
 
 <style>
@@ -172,21 +218,6 @@ function backToStream(postId){
 
 <script>
 const tabs = document.querySelectorAll('.doc-nav button');
-const sections = document.querySelectorAll('.section');
-
-tabs.forEach(tab=>{
-  tab.addEventListener('click', ()=>{
-    tabs.forEach(t=>t.classList.remove('active'));
-    sections.forEach(s=>s.classList.remove('active'));
-
-    tab.classList.add('active');
-    document.getElementById(tab.dataset.target).classList.add('active');
-  });
-});
-</script>
-
-<script>
-  const tabs = document.querySelectorAll('.doc-nav button');
 const sections = document.querySelectorAll('.section');
 
 tabs.forEach(tab=>{

@@ -1,0 +1,14 @@
+- id: post1
+  autore: Gabriel Jones
+  avatar: G
+  titolo: Programma Attività in Oratorio
+  data: 1 febbraio 2026
+  contenuto:
+    titolo_scheda: Programma Oratorio 02/2026
+    descrizione: Proposta per le attività in oratorio a Feb2026
+    allegati:
+      - nome: Documento di programmazione
+        tipo: PDF
+        fonte: Interno1
+        link: /assets/programmafebbraioinoratorio2026.pdf
+        note: "-"
