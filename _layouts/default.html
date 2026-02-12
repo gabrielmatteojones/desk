@@ -1,175 +1,1505 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
-      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-italia@2.17.2/dist/css/bootstrap-italia.min.css" />
-      <link rel="stylesheet" type="text/css" href="{{ site.url }}/style.css" />
-      <link rel="stylesheet" type="text/css" href="{{ site.url }}/stylex.css" />
+
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/bootstrap-italia.min.css">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/font-awesome.css">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/xfonts.css">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/common.css">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/spid.css">
+<link rel="stylesheet" href="{{ site.url }}/asset/commons/lib/jsx/jQuery/plugins/realperson/jquery.realperson.css">
 
 <style>
-/* Applica lo stile a tutta la pagina */
-body {
-    /* Impostiamo l'Atkinson come font principale */
-    font-family: 'Atkinson Hyperlegible Mono', monospace;
-    
-    /* Parametri fondamentali per la leggibilità DSA */
-    font-size: 18px;            /* Una dimensione leggibile, non scendere sotto i 16px */
-    line-height: 1.6;           /* Aumenta lo spazio tra le righe per non "perdere il segno" */
-    letter-spacing: 0.03em;     /* Aumenta leggermente lo spazio tra le lettere */
-    word-spacing: 0.1em;        /* Aumenta lo spazio tra le parole */
-    
-    /* Colori per ridurre l'affaticamento visivo */
-    color: #222222;             /* Grigio molto scuro (meno aggressivo del nero puro) */
-    background-color: #fdfdfd;  /* Bianco sporco/crema (riduce l'effetto abbagliamento) */
-    
-    /* Ottimizzazione rendering del font */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+
+button svg.icon {
+    fill: black !important;
 }
 
-/* Opzionale: Se vuoi usare PT Sans per i titoli (H1, H2, ecc.) per staccare */
-h1, h2, h3 {
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 700;
-    margin-bottom: 1em;
+
+
+body
+{
+font-family: 'Titillium Web';
+background-color: #FFFFFF;
+}
+
+
+
+a, a:hover
+{
+color: #0000EE;
+}
+
+.form-check [type="checkbox"]:checked + label::after
+{
+border-color: #333;
+background-color: #333;
+color: #fff;
+}
+
+.login_bg
+{
+background-color: #FFFFFF;
+}
+
+.login_text, .login_text:hover
+{
+color: #3941A0;
+}
+
+.logo_bg
+{
+background-color: #FFFFFF;
+}
+
+.logo_text, .logo_text:hover
+{
+color: #000000;
+}
+
+.menu_bg
+{
+background-color: #FFFFFF;
+}
+
+.menu_text, .menu_text:hover
+{
+color: #000000;
+}
+
+.footer_bg
+{
+background-color: #F5F5F5;
+}
+
+.footer_text, .footer_text:hover
+{
+color: #000000;
+}
+
+.primario_text, .primario_text:hover
+{
+color: #3941A0;
+}
+
+.secondario_text, .secondario_text:hover
+{
+color: #333333;
+}
+
+
+/*===================================================*/
+/* Personalizzazione Sfondo Testata / Menù / Footer */
+/*=================================================*/
+
+.it-header-wrapper .it-header-slim-wrapper {
+background: #FFFFFF;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content a {
+color: #3941A0;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content .modal a {
+color: #0000EE;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content a .icon {
+fill: #3941A0;
+}
+
+.it-header-wrapper .it-header-center-wrapper {
+background-color: #FFFFFF!important;
+}
+
+.it-header-center-wrapper .it-header-center-content-wrapper .it-brand-wrapper a {
+color: #000000;
+}
+
+.it-header-wrapper .it-header-navbar-wrapper {
+background: #FFFFFF;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link {
+color: #000000;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
+fill: #000000;
+}
+
+.it-header-wrapper .it-header-navbar-wrapper .custom-navbar-toggler svg
+{
+fill: #3941A0;
+}
+
+
+
+/*==========================================*/
+/* Sezione Footer */
+/*==========================================*/
+
+.it-footer .it-footer-main {
+background-color: #F5F5F5;
+}
+
+.it-footer-main
+{
+font-family: "Titillium Web"!important;
+color: #000000;
+}
+
+.it-footer-main h3{
+color: #000000;
+}
+
+.it-footer-main a{
+color: #000000;
+}
+
+
+/*==========================================*/
+/* Login / Social */
+/*==========================================*/
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content .header-slim-right-zone .it-access-top-wrapper button {
+background: #FFFFFF;
+color: #000000;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content .header-slim-right-zone .it-access-top-wrapper input {
+background: #FFFFFF;
+color: #000000;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content .header-slim-right-zone .it-access-top-wrapper button:hover {
+background: #FFFFFF;
+}
+
+.it-header-slim-wrapper .it-header-slim-wrapper-content .header-slim-right-zone .link-list-wrapper ul li a span {
+color: #333;
+}
+
+.it-nav-wrapper .it-header-center-wrapper .it-header-center-content-wrapper .it-right-zone {
+color: #000000;
+}
+
+.it-nav-wrapper .it-header-center-wrapper .it-header-center-content-wrapper .it-right-zone .it-socials ul .icon {
+fill: #000000;
+}
+
+.it-nav-wrapper .it-header-center-wrapper .it-header-center-content-wrapper .it-right-zone .it-socials ul li a:hover .icon {
+fill: #FFFFFF;
+}
+
+img.avatar-profile {
+border: 2px solid #FFFFFF;
+}
+
+/*==========================================*/
+/* Login Modal Form */
+/*==========================================*/
+
+.modal-dialog .modal-content .md-form label.active {
+color: #FFFFFF;
+}
+
+.modal-dialog .modal-content .btn.color-box {
+color: #3941A0;
+}
+
+.modal-dialog .modal-content .color-box {
+background: #FFFFFF!important;
+}
+
+.modal-dialog .modal-content .btn .fab {
+color: #FFFFFF!important;
+}
+
+
+/*==========================================*/
+/* Logo - Intestazione*/
+/*==========================================*/
+.it-brand-wrapper .testo_t1, .it-brand-wrapper .testo_t2, .it-brand-wrapper .testo_t3
+{
+font-family: 'Titillium Web';
+color: #000000;
+}
+
+
+/*==========================================*/
+/* Menu di navigazione*/
+/*==========================================*/
+
+.it-header-navbar-wrapper .link-list-wrapper ul li a span {
+color: #333333!important;
+}
+
+.it-header-navbar-wrapper .link-list-wrapper ul li a:hover span {
+color: #333333!important;
+}
+
+.it-header-wrapper .it-nav-wrapper .it-header-navbar-wrapper.sticky
+{
+background-color: #FFFFFF;
+}
+
+.navbar .dropdown-menu
+{
+background-color: #F5F5F5;
+}
+
+.navbar .dropdown-menu::before {
+background-color: #F5F5F5;
+}
+
+
+/*==========================================*/
+/* Sezione News */
+/*==========================================*/
+
+.sezione-notizie .card .card-body h3.card-title {
+color: #3941A0;
+}
+
+.sezione-notizie a.read-more {
+color: #333333;
+}
+
+.sezione-notizie .card .card-body h3 a {
+color: #3941A0;
+}
+
+.sezione-notizie .card .card-body h3 a:hover {
+color: #3941A0;
+}
+
+.sezione-notizie .card .card-body p {
+font-family: "Titillium Web";
+}
+
+.sezione-notizie .card .card-body p {
+color: #333333;
+}
+
+.sezione-notizie .card:hover
+{
+outline: 3px solid #0000EE;
+}
+
+
+/*==========================================*/
+/* Sezione news a scorrimento */
+/*==========================================*/
+
+.sezione-scorrimento .card .card-body h3 a
+{
+color: #3941A0;
+}
+
+
+/*==========================================*/
+/* Widgets */
+/*==========================================*/
+
+#amministrativo .sezione-ammin:hover
+{
+outline: 3px solid #0000EE;
+}
+
+.sezione-widgets .widget:hover, .sezione-widgets .widget-servizi:hover
+{
+outline: 3px solid #0000EE;
+}
+
+
+/*==========================================*/
+/* Eventi */
+/*==========================================*/
+
+.planning-calendar {
+font-family: "Titillium Web";
+}
+
+.planning-day-listed:focus {
+background-color: #FFFFFF;
+}
+
+.planning-day.planning-day-today {
+background-color: #FFFFFF;
+}
+
+.latest-news-feed .latest-news-feed-header{
+background-color: #FFFFFF;
+color: #3941A0;
+}
+
+.latest-news-feed .latest-news-feed-body h3 a,
+.latest-news-feed .latest-news-feed-body h3 a:hover{
+color: #3941A0;
+font-family: "Titillium Web";
+}
+
+.planning-day.planning-day-today .planning-day-num
+{
+color: #000000;
+}
+
+.planning-day.planning-day-listed.focus--mouse .planning-day-num
+{
+color: #000000;
+}
+
+.planning-day.planning-day-listed:focus .planning-day-num
+{
+color: #000000;
+}
+
+/*==========================================*/
+/* Back to top */
+/*==========================================*/
+
+.back-to-top, .back-to-top:hover {
+background: #FFFFFF;
+}
+
+.icon-light {
+fill: #000000 !important;
+}
+
+/*==========================================*/
+/* Breadcrumb & Bottone Scarica Visualizza */
+/*==========================================*/
+
+.breadcrumb-container .breadcrumb .breadcrumb-item.active a {
+color: #3941A0;
+}
+
+.breadcrumb-container .breadcrumb .breadcrumb-item a {
+color: #333;
+}
+
+
+.btn-warning {
+color: #fff!important;
+background-color: #FFFFFF;
+border-color: #FFFFFF;
+}
+
+.btn-warning:hover {
+color: #fff!important;
+background-color: #3f3e3e;
+border-color: #3f3e3e;
+}
+
+/*==========================================*/
+/* Pagina Semplice */
+/*==========================================*/
+
+.contenuto-sito h1
+{
+color: #3941A0;
+}
+
+.contenuto-sito p a {
+color: #0000EE;
+}
+
+/*==========================================*/
+/* Gruppo di Pagine */
+/*==========================================*/
+
+.contenuto-sito .section-gruppo-pagina .content-index--menu ul.lv1 li.list-element.lv1>.media {
+background-color: #FFFFFF;
+color: #3941A0!important;
+border-bottom: 0px;
+}
+
+.contenuto-sito .section-gruppo-pagina .content-index--menu ul.lv1 li.list-element.lv1>.media a {
+color: #3941A0!important;
+border-bottom: 0px;
+}
+
+
+/*==========================================*/
+/* Panoramica */
+/*==========================================*/
+
+.contenuto-sito.contenuto-panoramica .section_title
+{
+background: #FFFFFF;
+}
+
+.contenuto-sito.contenuto-panoramica h1, .contenuto-sito.contenuto-panoramica p
+{
+color: #000000;
+}
+
+
+/*==========================================*/
+/* Schede / Servizi */
+/*==========================================*/
+
+.contenuto-schede-index .section_title
+{
+background: #FFFFFF;
+}
+
+.contenuto-schede-index .section_title h1, .contenuto-schede-index .section_title p
+{
+color: #000000;
+}
+
+
+/*==========================================*/
+/* News */
+/*==========================================*/
+.contenuto-sito .pagina .card.card-big .flag-icon{
+background: #FFFFFF;
+}
+
+.contenuto-sito .pagina .card.border-left-card {
+border-left: 5px solid #FFFFFF;
+}
+
+.contenuto-sito .pagina .card.card-big .card-body p{
+font-family: "Titillium Web",Geneva,Tahoma,sans-serif;
+}
+
+
+/*==========================================*/
+/* Amministrazione / Albo */
+/*==========================================*/
+
+.amministrazione-trasparente .indice .categorie li.categorie-item.titolo_trasparenza {
+background-color: #FFFFFF!important;
+}
+
+.amministrazione-trasparente .indice .categorie li.categorie-item.titolo_trasparenza label{
+color: #3941A0!important;
+}
+
+.amministrazione-trasparente .indice .categorie li.categorie-item.oggetto_trasparenza a{
+color: #3941A0;
+}
+
+.badge-light{
+color: #3941A0;
+background-color: #FFFFFF;
+}
+
+/* Colonna DX*/
+
+.amministrazione-trasparente .trasparenza-content .tabella-ricerca .search-table2 button{
+border: 1px solid #ddd;
+background: #fff;
+}
+
+.amministrazione-trasparente .trasparenza-content #box-search {
+border: 1px solid #ddd;
+background: #fff;
+}
+
+.amministrazione-trasparente .trasparenza-content #box-categoria {
+border: 1px solid #ddd;
+background: #fff;
+}
+
+.amministrazione-trasparente .trasparenza-content #box-search .form_sez_trasparenza {
+color: #767676!important;
+}
+
+.amministrazione-trasparente .trasparenza-content #box-categoria .select_trasparenza {
+color: #333333;
+}
+
+
+/*==========================================*/
+/* Pagina Speciale 1 */
+/*==========================================*/
+
+.tabella-standard #testata-tabella, .tabella-standard2 #testata-tabella
+{
+background:#FFFFFF;
+color:#3941A0;
+}
+
+table .odd{
+background:#f9f9f9;
+}
+table .even{
+background:#eee;
+}
+
+.tabella #testata-tabella{
+background:#FFFFFF;
+color:white;
+}
+
+.tabella td, .tabella th{
+border: 1px solid #fff;
+}
+
+span.orari-precise {
+color: #333;
+}
+
+span.docente-attivo {
+color: #333;
+}
+
+#serbatoio-pon #testata-serbatoio {
+background:#FFFFFF;
+color:white;
+}
+
+#serbatoio-pon td, #serbatoio-pon th{
+border: 1px solid #ccc;
+}
+
+/*==========================================*/
+/* Pagina Speciale 2: Galleria Video; */
+/*==========================================*/
+
+.contenuto-sito .boxvideo {
+background-color: #eee;
+}
+
+.contenuto-sito .box-video{
+background: #fff;
+box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.video-card-slide .it-video-card-slide {
+border: 1px solid #e3e4e6;
+}
+
+.video-card-slide .it-video-card-slide .owl-nav button{
+background-color: #FFFFFF;
+color: #fff;
+}
+
+.video-card-slide .it-video-card-slide .owl-dots .owl-dot {
+background: #FFFFFF;
+}
+
+/*==========================================*/
+/* Pagina Speciale 3: Contatti */
+/*==========================================*/
+
+.sezione-contatti {
+border: 1px solid #e3e3e3;
+background-color: #f5f5f5;
+}
+
+.sezione-contatti .contact-dati .unico-info p{
+color: #3941A0;
+}
+
+.sezione-contatti .contact-dati .unico-info a{
+color: #000;
+}
+
+.sezione-contatti .card:after {
+background-color: #fff;
+}
+
+.sezione-contatti .title-contact h3 {
+color: #3941A0;
+}
+
+.sezione-contatti .form-group .input-group-text {
+color: #495057;
+background-color: #e9ecef;
+border: 1px solid #ced4da;
+border-radius: .25rem;
+}
+
+.sezione-contatti .form-group .input-group input {
+border-top: 1px solid #f5f5f5;
+}
+
+.sezione-contatti .card-body .send-button .btn-rounded {
+color: #333333;
+background-color: #FFFFFF;
+}
+
+/* ---------------------------*/
+
+.sezione-informazione-scuola {
+border: 1px solid #e3e3e3;
+background-color: #f5f5f5;
+}
+
+.sezione-informazione-scuola #tabelle-orari {
+background-color: #fff;
+}
+
+.sezione-informazione-scuola #tabelle-orari td {
+border: 1px solid#ccc;
+}
+
+.sezione-informazione-scuola .nota-bene a {
+color: #3941A0;
+}
+
+
+/*==========================================*/
+/* Varie */
+/*==========================================*/
+
+.rssmaintitle
+{
+background-color: #FFFFFF;
+color: #3941A0;
+}
+
+.rsstitle
+{
+color: #3941A0;
+}
+
+.rsstext
+{
+color: #333333;
+}
+
+:focus:not(.focus--mouse):not([data-focus-mouse="true"]) {
+border-color: #0000EE !important;
+box-shadow: 0 0 0 2px #0000EE !important;
+outline: 0 !important;
+}
+
+
+/*==========================================*/
+/* MEDIA QUERIES */
+/*==========================================*/
+
+@media (max-width: 1200px) and (min-width: 992px){
+
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+.it-header-wrapper .it-header-navbar-wrapper {
+background: none;
+color: #3941A0;
+}
+
+img.avatar-profile {
+border: 2px solid #FFFFFF;
+}
+
+.navbar .navbar-collapsable .menu-wrapper {
+background-color: #FFFFFF;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link {
+color: #000000;
+}
+
+.it-header-navbar-wrapper .link-list-wrapper ul li h3 {
+color: #000000;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
+fill: #000000;
+}
+
+.it-header-navbar-wrapper .link-list-wrapper ul li a span {
+color: #333333!important;
+}
+
+.it-header-navbar-wrapper .link-list-wrapper ul li a:hover span {
+color: #333333!important;
+}
+
+.amministrazione-trasparente .trasparenza-content #box-categoria .select_trasparenza {
+color: #333333;
+}
+}
+
+@media (max-width: 767px) and (min-width: 408px){
+}
+
+@media (max-width: 767px){
+.it-header-wrapper .it-header-navbar-wrapper {
+background: none;
+color: #3941A0;
+}
+
+img.avatar-profile {
+border: 2px solid #FFFFFF;
+}
+
+.navbar .navbar-collapsable .menu-wrapper {
+background-color: #FFFFFF;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link {
+color: #000000;
+}
+
+
+.it-header-navbar-wrapper .link-list-wrapper ul li h3 {
+color: #000000;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link.dropdown-toggle svg {
+fill: #000000;
+}
+
+.it-header-navbar-wrapper .link-list-wrapper ul li a span {
+color: #333333!important;
+}
+
+.it-header-navbar-wrapper .link-list-wrapper ul li a:hover span {
+color: #333333!important;
+}
+
+.video-card-slide .it-video-card-slide {
+border: 1px solid #e3e4e6;
+}
 }
 </style>
 
+
+
+
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/schoolplanner.css" media="screen">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/fullcalendar.css" media="screen">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/aos.css" media="screen">
+<link rel="stylesheet" href="{{ site.url }}/asset/pvw2/css/vendor/splide-core.min.css" media="screen">
+
+
+<style>
+.latest-news-feed .latest-news-feed-body h3 {
+font-size: 20px;
+}
+
+.navbar .navbar-collapsable .navbar-nav li a.nav-link {
+font-size: 1.1rem;
+}
+.link-list-wrapper ul li a {
+font-size: 1em;
+}
+.planning-day-indicator {
+background-color: #f8d012;
+}
+</style>
   </head>
   <body>
-    <header class="it-header-wrapper">
-  <div class="it-header-slim-wrapper">
-  <div class="container">
-  <div class="row">
-  <div class="col-12">
-  <div class="it-header-slim-wrapper-content">
-  <div class="nav-mobile">
-       <style>
-        #search-results {
-            border: 1px solid #ccc;
-            display: none;
-            margin-top: 5px;
-            padding: 10px;
-        }
-    </style>
-  <a href="https://www.jareads.org" target="_blank"><b>Gabriel Jones - </b></a>
-  <a href="https://www.bibliowin.it" target="_blank"><b>Realizzato con bw</b></a>
-  
-  
-  </div>
-  <!-- Sezione Autenticazione / Scelta Lingua -->
-  <div class="header-slim-right-zone">
-  <!-- multilang space -->
-  
-  <div class="it-access-top-wrapper">
-
-<button type="button" class="btn btn-primary">
-<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M329-490h302v-70H329v70Zm0 130h302v-70H329v70Zm0 130h182v-70H329v70ZM229-59q-35.78 0-63.39-26.91Q138-112.83 138-150v-660q0-37.59 27.61-64.79Q193.22-902 229-902h364l230 228v524q0 37.17-27.91 64.09Q767.19-59 731-59H229Zm337-590h165L566-810v161Z"/></svg>
-  <span class="mr-2"><a href="/area-personale/">Utente: <mark style="background-color: #ccff00; color: black;">GABRIEL JONES</mark> JABW</a></span>
-                  <div class="icon-wrapper">
-                </div></button>
-  
-  
-  </div>
-  </div>
-  
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="it-nav-wrapper">
-  <div class="it-header-center-wrapper">
-  <div class="container">
-  <div class="row">
-  <div class="col-12">
-  <div class="it-header-center-content-wrapper">
-  <div class="it-brand-wrapper">
-  <a href="/" title="Torna alla homepage">
-  
-  <h1>
-  <span class="media">
-  <img class="align-self-center logo_scuola" src="https://www.cgsi.it/Archivi/CGSI/images/logo_social.png" alt="logo">
-  
-  <span class="media-body ml-2 text-truncate">
-  <span class="testo_t3"><b>Gabriel Jones;</b></span>
-  <span class="testo_t1"><b>Desk Personale</b></span>
-  <span class="testo_t3"><b>EasyNet 2014-2019</b></span>
-  </span>
-  
-  
-  </span>
-  </h1>
-  
-  
-  </a>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-  </div>
-
-  <div class="it-header-navbar-wrapper">
-    <div class="container-xxl">
-      <div class="row">
-        <div class="col-12">
-          <!--start nav-->
-          <nav class="navbar navbar-expand-lg" aria-label="Navigazione principale">
-            <button class="custom-navbar-toggler" type="button" aria-controls="nav0" aria-expanded="false" aria-label="Mostra/Nascondi la navigazione" data-bs-toggle="navbarcollapsible" data-bs-target="#nav0">
-              <svg class="icon bg-override"><use href="{{ site.url }}/sprites.svg#it-burger"></use></svg>
-            </button>
-            <div class="navbar-collapsable" id="nav0" style="display: none;">
-              <div class="overlay" style="display: none;"></div>
-              <div class="close-div">
-                <button class="btn close-menu" type="button">
-                  <span class="visually-hidden">Nascondi la navigazione</span>
-                  <svg class="icon"><use href="{{ site.url }}/sprites.svg#it-close-big"></use></svg>
-                </button>
-              </div>
-  
+    
 
 
 
-  <div id="navigation-bar" class="it-header-navbar-wrapper">
-  <div class="container">
-  <div class="row">
-  <div class="col-12">
-  <nav class="navbar navbar-expand-lg has-megamenu" aria-label="Menu principale">
-              <div class="menu-wrapper">
-                <ul class="navbar-nav">
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/"><span><b><h6>Home</h6></b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/biblioteca/"><span><b>Biblioteca</b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/archivio/"><span><b>Archivio</b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/documenti/"><span><b>Documenti</b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/areasocioeducativa/"><span><b><mark>Area Socio Educativa</mark></b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/schede/work/"><span><b>Scheda Lavoro</b></span></a></li>
-                  <li class="nav-item"><a class="nav-link" href="{{ site.url }}/schede/osf/"><span><b><mark >Scheda OSF</mark></b></span></a></li>
-                </ul>
-              </div>
+
+<a class="skip-link screen-reader-text" href="{{ site.url }}/#maincontent">Salta al contenuto</a>
+<header class="it-header-wrapper">
+<div class="it-header-slim-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="it-header-slim-wrapper-content">
+<div class="nav-mobile">
+
+
+</div>
+<!-- Sezione Autenticazione / Scelta Lingua -->
+<div class="header-slim-right-zone">
+<!-- multilang space -->
+
+<div class="it-access-top-wrapper">
+
+<div id="user-area">
+  <button class="btn btn-primary btn-sm" data-toggle="modal" data-target="#LoginModalForm">
+    <i class="fa fa-user-circle"></i> Accedi
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
-  </nav>
-  </div>
-  </div>
-  </div>
-  </div>
-  
-  
-                
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
-  
-      
-  </div></header>
+</div>
+</div>
+
+
+<!-- Modal Login -->
+<div class="modal fade" id="LoginModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content login-form">
+<div class="modal-testata text-center">
+<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel"><strong>Accedi</strong></h3>
+</div>
+<div class="modal-body mx-4">
+<div class="md-form mb-5">
+<input type="email" id="accedi-mail" class="form-control validate">
+<label data-error="wrong" data-success="right" for="accedi-mail">Nome Utente</label>
+</div>
+<div class="md-form pb-3">
+<input type="password" id="accedi-pwd" class="form-control validate">
+<label data-error="wrong" data-success="right" for="accedi-pwd">Password</label>
+</div>
+
+
+<div class="text-center mb-3">
+  <button id="login-btn" class="btn btn-primary btn-block">Accedi</button>
+</div>
+
+<div class="text-center">
+  <small id="login-error" style="color:red;"></small>
+</div>
+
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- /Modal Login -->
+
+<!-- Modal selezione utente -->
+<div class="modal fade" id="UserSelectModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content login-form">
+<div class="modal-testata text-center">
+<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel2"><strong>Seleziona utente</strong></h3>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">button close</span>
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body mx-4">
+
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal selezione utente -->
+
+<!-- Modal pwd dimenticata -->
+<div class="modal fade" id="ForgotPwdModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+<div class="modal-dialog" role="document">
+<div class="modal-content login-form">
+<div class="modal-testata text-center">
+<h3 class="modal-title w-100 dark-grey-text font-weight-bold my-3" id="myModalLabel3"><strong>Recupero password</strong></h3>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="sr-only">button close</span>
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body mx-4">
+<form id="pvw-reminder-form">
+<div class="md-form pb-3">
+<input type="email" id="forgot-mail" name="eml" class="form-control validate">
+<label data-error="wrong" data-success="right" for="forgot-mail">E-mail</label>
+<small>Verrà inviato un messaggio all'indirizzo indicato con le istruzioni necessarie.</small><br><br>
+<small>Non hai una e-mail associata al nome utente? Effettua il reset della password tramite la
+<a href="https://web.spaggiari.eu" target="_blank">Login Spaggiari</a></small>
+</div>
+<div class="md-form pb-1">
+<input type="text" name="captcha" class="captcha" placeholder="Codice di controllo">
+</div>
+<div class="md-form pb-1">
+<div class="alert alert-success reset-success d-none" role="alert">
+E-mail inviata, si prega di controllare la casella di posta elettronica!
+</div>
+</div>
+<div class="md-form pb-1">
+<div class="alert alert-danger reset-error d-none" role="alert">
+
+</div>
+</div>
+<div class="text-center mb-3">
+<input type="hidden" value="akRSPWRQ" name="a">
+<input type="button" value="Invia" class="btn color-box btn-block btn-rounded z-depth-1a btn-reminder"/>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal pwd dimenticata -->
+
+<!-- Modal vari -->
+<div class="modal fade" tabindex="-1" role="dialog" id="error-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Errore</strong></span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center mt-1">
+<i aria-hidden="true" class="fas fa-times-circle error-modal-icon"></i>
+<p class="error-modal-text text-center mt-2 mb-0"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary btn-azione" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="ok-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Successo</strong></span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center mt-1">
+<i aria-hidden="true" class="fas fa-check-circle ok-modal-icon"></i>
+<p class="ok-modal-text text-center mt-2 mb-0"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary btn-azione" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="info-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title"><strong>Informazione</strong></span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center mt-1">
+<i aria-hidden="true" class="fas fa-info-circle info-modal-icon"></i>
+<p class="info-modal-text text-center mt-2 mb-0"></p>
+</div>
+</div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary btn-azione" data-dismiss="modal">Chiudi</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" tabindex="-1" role="dialog" id="loading-modal" data-backdrop="static" data-keyboard="false">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title" style="font-weight:bold">Attendere...</span>
+</div>
+<div class="modal-body">
+<div class="row">
+<div class="col-12 text-center py-5 px-5">
+<div class="d-flex justify-content-center">
+<div class="spinner-border" role="status"></div>
+</div>
+Attendere il completamento dell'operazione...
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="sp-event-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-body mx-4">
+
+</div>
+<div class="modal-footer">
+<div class="btn-modal-fixed-top-right">
+<button type="button" class="btn btn-outline-secondary btn-modal-close" data-dismiss="modal" data-tooltip="tooltip" title="Chiudi">
+<span class="sr-only">Chiudi</span>
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-close-big"></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="content-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-xl" role="document">
+<div class="modal-content">
+<div class="modal-body">
+
+</div>
+<div class="modal-footer">
+<div class="btn-modal-fixed-top-right">
+<button type="button" class="btn btn-outline-secondary btn-modal-close" data-dismiss="modal" data-tooltip="tooltip" title="Chiudi">
+<span class="sr-only">Chiudi</span>
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-close-big"></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<span class="modal-title" style="font-weight:bold">Conferma</span>
+</div>
+<div class="modal-body">
+<div class="confirm-modal-text"></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-secondary" data-dismiss="modal">Annulla</button>
+<button type="button" class="btn btn-primary" data-dismiss="modal">Conferma</button>
+</div>
+</div>
+</div>
+</div>
+<!-- /Modal vari -->
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="it-nav-wrapper">
+<div class="it-header-center-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="it-header-center-content-wrapper">
+<div class="it-brand-wrapper">
+<a href="{{ site.url }}" title="Torna alla homepage">
+
+<h1>
+<span class="media">
+<img class="align-self-center logo_scuola" src="{{ site.url }}/asset/logosito.png" alt="LOGO">
+
+</span>
+</h1>
+
+
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="navigation-bar" class="it-header-navbar-wrapper">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<nav class="navbar navbar-expand-lg has-megamenu" aria-label="Menu principale">
+<button class="custom-navbar-toggler" type="button" aria-controls="nav10" aria-expanded="false" aria-label="Toggle navigation" data-target="#nav10">
+<svg class="icon">
+<use xlink:href="pvw2/img/sprite.svg#it-burger"></use>
+</svg>
+</button>
+<div class="navbar-collapsable" id="nav10">
+<div class="overlay"></div>
+<div class="close-div sr-only">
+<button class="btn close-menu" type="button"><span class="it-close"></span>close</button>
+</div>
+<div class="menu-wrapper">
+<ul class="navbar-nav" data-element="menu">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="{{ site.url }}/org" data-toggle="dropdown" aria-expanded="false">
+<span>ORGANIZZAZIONE</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="school-submenu">
+
+<li class="d-none">
+<a class="list-item" href="{{ site.url }}/organizzazione" target="_self" data-element="overview">
+<span><strong>Panoramica</strong></span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}/organizzazione/progetti/" target="_self" >
+<span>Progetti</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}/organizzazione/persone/" target="_self" data-element="school-locations">
+<span>Le Persone</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}/organizzazione/persone" target="_self" >
+<span>Le persone</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/i-numeri-della-scuola" target="_self" >
+<span>I numeri della scuola</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//carte-della-scuola" target="_self" >
+<span>Le carte della scuola</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//organizzazione" target="_self" >
+<span>Organizzazione</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/la-storia" target="_self" >
+<span>La storia</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="{{ site.url }}/#" data-toggle="dropdown" aria-expanded="false">
+<span>Servizi</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="services-submenu">
+
+<li class="d-none">
+<a class="list-item" href="{{ site.url }}//panoramica/Servizi" target="_self" data-element="overview">
+<span><strong>Panoramica</strong></span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//servizi-famiglie" target="_self" data-element="service-type">
+<span>Famiglie e studenti</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//servizi-personale" target="_self" data-element="service-type">
+<span>Personale scolastico</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//percorsi-studio" target="_self" >
+<span>Percorsi di studio</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/orientamento-in-entrata" target="_self" >
+<span>Orientamento</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}/areapersonale/" target="_self" >
+<span>Area Riservata</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="{{ site.url }}/#" data-toggle="dropdown" aria-expanded="false">
+<span>Novità</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="news-submenu">
+
+<li class="d-none">
+<a class="list-item" href="{{ site.url }}//panoramica/Novit%C3%A0" target="_self" data-element="overview">
+<span><strong>Panoramica</strong></span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//archivio-news" target="_self" >
+<span>Le notizie</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//comunicati" target="_self" >
+<span>Le circolari</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/calendario-eventi" target="_self" >
+<span>Calendario eventi</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//albo-online" target="_self" >
+<span>Albo online</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="{{ site.url }}/#" data-toggle="dropdown" aria-expanded="false">
+<span>Didattica</span>
+<svg class="icon icon-xs">
+<use xlink:href="/pvw2/img/sprite.svg#it-expand"></use>
+</svg>
+</a>
+
+<div class="dropdown-menu">
+<div class="link-list-wrapper">
+<ul class="link-list" data-element="teaching-submenu">
+
+<li class="d-none">
+<a class="list-item" href="{{ site.url }}//panoramica/Didattica" target="_self" data-element="overview">
+<span><strong>Panoramica</strong></span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/offerta-formativa" target="_self" >
+<span>Offerta formativa</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/progetti" target="_self" >
+<span>I progetti delle classi</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/orario-delle-lezioni" target="_self" >
+<span>Orario delle lezioni</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/percorsi-per-le-competenze-trasversali-e-per-lorientamento" target="_self" >
+<span>FSL (ex pcto)</span>
+</a>
+</li>
+
+
+<li>
+<a class="list-item" href="{{ site.url }}//pagine/esame-di-stato" target="_self" >
+<span>Esame di Stato</span>
+</a>
+</li>
+
+
+</ul>
+</div>
+</div>
+</li>
+
+
+<li class="nav-item">
+<a class="nav-link" href="{{ site.url }}//pagine/contatti" target="_self">
+<span>Contatti</span>
+</a>
+</li>
+
+
+</ul>
+<div class="it-search-wrapper">
+<div class="hidden-desk search" style="float:left;">
+<div class="pull-right">
+<form class="navbar-right" role="search" action="/cerca">
+<div class="input-group search-shadow">
+<label for="cerca-mobile" class="sr-only">Campo di ricerca per le pagine del sito</label>
+<input type="hidden" name="tipo" value="cerca">
+<input id="cerca-mobile" type="text" name="cerca_sito" class="form-control" placeholder="Cerca nel sito">
+<span class="input-group-btn">
+<button class="btn-search search-link rounded-icon" type="submit">
+<svg class="icon">
+<use xlink:href="/pvw2/img/sprite.svg#it-search"></use>
+</svg>
+</button>
+</span>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>
+</header>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyD8Na77eHSTpzzVmmJenjDJNZyIqu4GtZU",
+    authDomain: "gabrieljones-ec8a4.firebaseapp.com",
+    projectId: "gabrieljones-ec8a4",
+    storageBucket: "gabrieljones-ec8a4.firebasestorage.app",
+    messagingSenderId: "861983070652",
+    appId: "1:861983070652:web:cbc75c3494923f747ef3b9",
+    measurementId: "G-8EFNPJP6GB"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  document.addEventListener("DOMContentLoaded", function() {
+
+    const userArea = document.getElementById("user-area");
+
+    // LOGIN
+    document.getElementById("login-btn").addEventListener("click", function() {
+      const email = document.getElementById("accedi-mail").value;
+      const password = document.getElementById("accedi-pwd").value;
+      const errorBox = document.getElementById("login-error");
+
+      errorBox.textContent = "";
+
+      auth.signInWithEmailAndPassword(email, password)
+        .then(() => {
+          location.reload();
+        })
+        .catch((error) => {
+          errorBox.textContent = error.message;
+        });
+    });
+
+    // STATO UTENTE
+    auth.onAuthStateChanged(function(user) {
+      if (user) {
+        userArea.innerHTML = `
+          <a href="/area/" class="btn btn-sm">
+            <i class="fa fa-user-circle"></i> Ciao, <b>Gabriel</b>
+          </a>
+        `;
+      }
+    });
+
+  });
+</script>
+
+
+
+
 
 
 
