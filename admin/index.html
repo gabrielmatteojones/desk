@@ -9,10 +9,28 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> 
   </head>
   <body>
-<header style="background:#111827;color:#fff;padding:1rem;text-align:center;">
-  <h1>Admin Personalizzato</h1>
-</header>
 
+
+
+
+
+    <script>
+// admin.js
+import CMS from "netlify-cms-app";
+
+CMS.registerPreviewTemplate("blog", ({ entry }) => {
+  const data = entry.toJS().data;
+  return (
+    <div>
+      <header style={{background:"#111827", color:"#fff", padding:"1rem"}}>
+        <h1>Admin Personalizzato</h1>
+      </header>
+      <h2>{data.title}</h2>
+      <div>{data.body}</div>
+    </div>
+  );
+});
+    </script>      
     <!-- Netlify CMS -->
     <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
 
