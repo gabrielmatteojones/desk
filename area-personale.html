@@ -4,42 +4,32 @@ title: Area Personale
 permalink: /area-personale/
 ---
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="container-fluid">
   <div class="row">
 
-    <!-- SIDEBAR -->
+    <!-- SIDEBAR DOCENTI -->
     <aside class="col-lg-3 col-md-4 border-end bg-light p-4">
 
-      <h5 class="mb-4">Area personale</h5>
+      <h5 class="mb-4">Area Docenti</h5>
 
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action active">
           Dashboard
         </a>
         <a href="#" class="list-group-item list-group-item-action">
-          Profilo
+          Registro elettronico
         </a>
         <a href="#" class="list-group-item list-group-item-action">
-          Documenti
+          Classi
         </a>
         <a href="#" class="list-group-item list-group-item-action">
-          Pagamenti
+          Materiali didattici
         </a>
         <a href="#" class="list-group-item list-group-item-action">
-          Messaggi
+          Scrutini
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Comunicazioni
         </a>
         <a href="#" class="list-group-item list-group-item-action text-danger">
           Esci
@@ -48,23 +38,32 @@ permalink: /area-personale/
 
     </aside>
 
-    <!-- CONTENUTO -->
+    <!-- CONTENUTO PRINCIPALE -->
     <main class="col-lg-9 col-md-8 p-4">
-      <!-- NAVBAR A SCHEDE -->
-      <ul class="nav nav-tabs mb-4" id="areaTabs" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dashboard" type="button">
+
+      <h2 class="mb-3">Benvenuto, Prof.ssa Bianchi</h2>
+      <p class="text-muted mb-4">Istituto Comprensivo Galileo Galilei</p>
+
+      <!-- NAV TABS -->
+      <ul class="nav nav-tabs mb-4" role="tablist">
+        <li class="nav-item">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dashboard">
             Dashboard
           </button>
         </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#attivita" type="button">
-            Ultime attività
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#registro">
+            Registro
           </button>
         </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#notifiche" type="button">
-            Notifiche
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#comunicazioni">
+            Comunicazioni
+          </button>
+        </li>
+        <li class="nav-item">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#scrutini">
+            Scrutini
           </button>
         </li>
       </ul>
@@ -80,9 +79,9 @@ permalink: /area-personale/
               <div class="card-wrapper">
                 <div class="card card-bg shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">I miei documenti</h5>
-                    <p class="card-text">Consulta certificati e pratiche attive.</p>
-                    <a href="#" class="btn btn-primary btn-sm">Accedi</a>
+                    <h5 class="card-title">Registro di oggi</h5>
+                    <p class="card-text">Compila presenze e argomenti svolti.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Apri registro</a>
                   </div>
                 </div>
               </div>
@@ -92,8 +91,8 @@ permalink: /area-personale/
               <div class="card-wrapper">
                 <div class="card card-bg shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">Pagamenti</h5>
-                    <p class="card-text">Storico e nuovi avvisi pagoPA.</p>
+                    <h5 class="card-title">Le mie classi</h5>
+                    <p class="card-text">Visualizza elenco studenti.</p>
                     <a href="#" class="btn btn-primary btn-sm">Gestisci</a>
                   </div>
                 </div>
@@ -105,10 +104,10 @@ permalink: /area-personale/
                 <div class="card card-bg shadow-sm">
                   <div class="card-body">
                     <h5 class="card-title">
-                      Messaggi
-                      <span class="badge bg-danger ms-2">3</span>
+                      Comunicazioni
+                      <span class="badge bg-danger ms-2">2</span>
                     </h5>
-                    <p class="card-text">Nuove comunicazioni ricevute.</p>
+                    <p class="card-text">Nuovi messaggi dalla segreteria.</p>
                     <a href="#" class="btn btn-outline-primary btn-sm">Leggi</a>
                   </div>
                 </div>
@@ -119,9 +118,21 @@ permalink: /area-personale/
               <div class="card-wrapper">
                 <div class="card card-bg shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">Prenotazioni</h5>
-                    <p class="card-text">Gestisci appuntamenti e richieste.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Apri</a>
+                    <h5 class="card-title">Materiali didattici</h5>
+                    <p class="card-text">Carica o modifica file.</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm">Accedi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+              <div class="card-wrapper">
+                <div class="card card-bg shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Scrutini</h5>
+                    <p class="card-text">Inserisci voti e giudizi.</p>
+                    <a href="#" class="btn btn-secondary btn-sm">Vai</a>
                   </div>
                 </div>
               </div>
@@ -131,24 +142,33 @@ permalink: /area-personale/
 
         </div>
 
-        <!-- ATTIVITA -->
-        <div class="tab-pane fade" id="attivita">
+        <!-- REGISTRO -->
+        <div class="tab-pane fade" id="registro">
           <div class="card card-bg">
             <div class="card-body">
-              <h5 class="card-title">Ultime attività</h5>
+              <h5 class="card-title">Registro elettronico</h5>
+              <p>Seleziona una classe e compila presenze, voti e argomenti svolti.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- COMUNICAZIONI -->
+        <div class="tab-pane fade" id="comunicazioni">
+          <div class="card card-bg">
+            <div class="card-body">
+              <h5 class="card-title">Ultime comunicazioni</h5>
               <ul class="list-unstyled mt-3">
-                <li class="mb-2">✔ Pagamento TARI completato</li>
-                <li class="mb-2">✔ Richiesta certificato inviata</li>
-                <li class="mb-2">✔ Nuovo messaggio ricevuto</li>
+                <li class="mb-2">📌 Collegio docenti – 20 marzo</li>
+                <li class="mb-2">📌 Aggiornamento PTOF</li>
               </ul>
             </div>
           </div>
         </div>
 
-        <!-- NOTIFICHE -->
-        <div class="tab-pane fade" id="notifiche">
+        <!-- SCRUTINI -->
+        <div class="tab-pane fade" id="scrutini">
           <div class="alert alert-info">
-            Nessuna nuova notifica disponibile.
+            Sessione scrutini non ancora aperta.
           </div>
         </div>
 
