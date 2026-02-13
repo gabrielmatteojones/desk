@@ -73,10 +73,10 @@ layout: default
                         <a href="{{ page.doc }}">
                           <div class="card-body">
                             <svg class="icon it-pdf-document">
-                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/pvw2/img/sprite.svg#it-pdf-document"></use>
+                              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/pvw2/img/sprite.svg#it-file-pdf"></use>
                             </svg>
                             <div class="card-icon-content">
-                              <p><strong>Titolo del documento (PDF)</strong></p>
+                              <p><strong>Documento Allegato (PDF)</strong></p>
                               <small>Pubblicato da Gabriel Jones</small>
                             </div><!-- /card-icon-content -->
                           </div><!-- /card-body -->
@@ -93,15 +93,10 @@ layout: default
                       <div class="calendar-date">
                         <div class="calendar-date-description rounded">
                           <div class="calendar-date-description-content">
-                            <p>Data d'inizio</p>
+                            <p>Data di pubblicazione:  {{ page.date }}</p>
                           </div><!-- /calendar-date-description-content -->
                         </div><!-- /calendar-date-description -->
-                        <h4 class="calendar-date-day">
-                          <p>{{ page.date }}</p>
-                        </h4><!-- /calendar-date-day -->
                       </div><!-- /calendar-date -->
-
-                      
                     </div><!-- /calendar-vertical -->
                   </div><!-- /col-lg-9 -->
                 </div><!-- /row -->
