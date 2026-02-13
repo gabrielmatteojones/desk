@@ -1,7 +1,7 @@
 ---
 layout: public
 title: Charlie Brownie
-permalink: /cbrownie/
+permalink: /schede/cbs/
 ---
 [R﻿ICERCA BASE](https://xhamster.com/search/suit+slave?orientations=gay)
 
