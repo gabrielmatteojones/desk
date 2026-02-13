@@ -1,0 +1,160 @@
+---
+layout: default
+title: Fatturazioni
+permalink: /schede/finanza1/
+---
+
+<div class="container my-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Fatturazioni</h1>
+    <div class="alert alert-info m-0">
+      <strong>Totale Visibile:</strong> <span id="totale">0</span>
+    </div>
+  </div>
+
+  <div class="mb-4">
+    <input type="text" id="filterInput" class="form-control form-control-lg" placeholder="Cerca per cliente, data o titolo...">
+    <div id="filterCount" class="form-text mt-2 text-muted"></div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-hover align-middle border">
+      <thead class="table-light">
+        <tr>
+          <th>Data</th>
+          <th>Titolo</th>
+          <th>Cliente</th>
+          <th class="text-end">Importo</th>
+        </tr>
+      </thead>
+      <tbody id="invoiceTable">
+        {% for f in site.data.fatture %}
+        <tr class="fattura" 
+            style="cursor: pointer;"
+            data-bs-toggle="modal" 
+            data-bs-target="#fatturaModal"
+            data-titolo="{{ f.titolo | escape }}"
+            data-cliente="{{ f.cliente | escape }}"
+            data-data="{{ f.data | date: '%d/%m/%Y' }}"
+            data-importo="{{ f.importo }}"
+            data-tassato="{% if f.tassato %}Sì{% else %}No{% endif %}"
+            data-note="{{ f.note | escape }}"
+            data-doc="{{ f.documento }}">
+          <td><span class="text-muted small">{{ f.data | date: "%d/%m/%Y" }}</span></td>
+          <td><strong>{{ f.titolo }}</strong></td>
+          <td>{{ f.cliente }}</td>
+          <td class="text-end fw-bold importo-val">{{ f.importo }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="modal fade" id="fatturaModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content shadow-lg">
+      <div class="modal-header bg-light">
+        <h5 class="modal-title" id="mTitolo">Dettaglio Fattura</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="text-muted">Cliente</span>
+            <span id="mCliente" class="fw-bold"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="text-muted">Data</span>
+            <span id="mData"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="text-muted">Importo</span>
+            <span id="mImporto" class="badge bg-primary fs-6"></span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <span class="text-muted">Stato Tassazione</span>
+            <span id="mTassato" class="badge"></span>
+          </li>
+          <li class="list-group-item">
+            <div class="text-muted small mb-1">Note</div>
+            <div id="mNote" class="fst-italic"></div>
+          </li>
+        </ul>
+      </div>
+      <div class="modal-footer justify-content-between bg-light">
+        <div id="mDocContainer"></div>
+        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+/**
+ * Logica di formattazione e filtraggio
+ */
+const euro = (v) => new Intl.NumberFormat('it-IT', { style: 'currency', currency: 'EUR' }).format(v);
+
+// Funzione per aggiornare il totale basandosi solo sulle righe visibili
+function aggiornaTotale() {
+  let somma = 0;
+  let visibili = 0;
+  const rows = document.querySelectorAll('#invoiceTable tr');
+  
+  rows.forEach(row => {
+    if (row.style.display !== 'none') {
+      const val = parseFloat(row.dataset.importo);
+      if (!isNaN(val)) somma += val;
+      visibili++;
+    }
+  });
+
+  document.getElementById('totale').textContent = euro(somma);
+  document.getElementById('filterCount').textContent = `Visualizzando ${visibili} fatture`;
+}
+
+// Gestione dell'input di ricerca
+document.getElementById('filterInput').addEventListener('input', function() {
+  const query = this.value.toLowerCase().trim();
+  const rows = document.querySelectorAll('#invoiceTable tr');
+
+  rows.forEach(row => {
+    const text = row.innerText.toLowerCase();
+    row.style.display = text.includes(query) ? '' : 'none';
+  });
+
+  aggiornaTotale();
+});
+
+// Popolamento dinamico del Modal al click
+const fatturaModal = document.getElementById('fatturaModal');
+fatturaModal.addEventListener('show.bs.modal', function (event) {
+  const r = event.relatedTarget; // Riga cliccata
+  
+  document.getElementById('mTitolo').textContent = r.dataset.titolo;
+  document.getElementById('mCliente').textContent = r.dataset.cliente;
+  document.getElementById('mData').textContent = r.dataset.data;
+  document.getElementById('mImporto').textContent = euro(r.dataset.importo);
+  document.getElementById('mNote').textContent = r.dataset.note || 'Nessuna nota aggiuntiva';
+  
+  // Gestione Badge Tassazione
+  const badge = document.getElementById('mTassato');
+  badge.textContent = r.dataset.tassato;
+  badge.className = 'badge ' + (r.dataset.tassato === 'Sì' ? 'bg-success' : 'bg-warning text-dark');
+
+  // Gestione Link Documento
+  const docContainer = document.getElementById('mDocContainer');
+  docContainer.innerHTML = r.dataset.doc 
+    ? `<a href="${r.dataset.doc}" target="_blank" class="btn btn-outline-primary btn-sm">📄 Apri Documento</a>` 
+    : '<span class="text-muted small">Nessun file allegato</span>';
+});
+
+// Inizializzazione: formatta i prezzi in tabella e calcola il primo totale
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.importo-val').forEach(el => {
+    el.textContent = euro(el.textContent);
+  });
+  aggiornaTotale();
+});
+</script>
