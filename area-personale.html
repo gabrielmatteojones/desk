@@ -4,135 +4,154 @@ title: Area Personale
 permalink: /area-personale/
 ---
 
-<div class="container-fluid">
+
+<div class="container my-5">
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb-container" aria-label="Percorso di navigazione">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Servizi</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Area docenti</li>
+    </ol>
+  </nav>
+
   <div class="row">
 
-    <!-- SIDEBAR DOCENTI -->
-    <aside class="col-lg-3 col-md-4 border-end bg-light p-4">
+    <!-- SIDEBAR -->
+    <aside class="col-lg-3 mb-4">
 
-      <h5 class="mb-4">Area Docenti</h5>
-
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action active">
-          Dashboard
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          Registro elettronico
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          Classi
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          Materiali didattici
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          Scrutini
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          Comunicazioni
-        </a>
-        <a href="#" class="list-group-item list-group-item-action text-danger">
-          Esci
-        </a>
+      <div class="it-list-wrapper">
+        <h6 class="mb-3 text-uppercase">Area Docenti</h6>
+        <ul class="it-list">
+          <li>
+            <a href="#" class="active">
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="#">Registro elettronico</a>
+          </li>
+          <li>
+            <a href="#">Le mie classi</a>
+          </li>
+          <li>
+            <a href="#">Materiali didattici</a>
+          </li>
+          <li>
+            <a href="#">Scrutini</a>
+          </li>
+          <li>
+            <a href="#">Comunicazioni interne</a>
+          </li>
+        </ul>
       </div>
 
     </aside>
 
-    <!-- CONTENUTO PRINCIPALE -->
-    <main class="col-lg-9 col-md-8 p-4">
+    <!-- CONTENUTO -->
+    <main class="col-lg-9">
 
-      <h2 class="mb-3">Benvenuto, Prof.ssa Bianchi</h2>
-      <p class="text-muted mb-4">Istituto Comprensivo Galileo Galilei</p>
+      <div class="mb-4">
+        <h1 class="h2">Area docenti</h1>
+        <p class="text-muted">
+          Benvenuta Prof.ssa Bianchi – Istituto Comprensivo Galileo Galilei
+        </p>
+      </div>
 
-      <!-- NAV TABS -->
+      <!-- NAV TABS STILE ISTITUZIONALE -->
       <ul class="nav nav-tabs mb-4" role="tablist">
         <li class="nav-item">
-          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dashboard">
-            Dashboard
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#servizi">
+            Servizi
           </button>
         </li>
         <li class="nav-item">
-          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#registro">
-            Registro
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#attivita">
+            Attività recenti
           </button>
         </li>
         <li class="nav-item">
-          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#comunicazioni">
-            Comunicazioni
-          </button>
-        </li>
-        <li class="nav-item">
-          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#scrutini">
-            Scrutini
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#notifiche">
+            Notifiche
           </button>
         </li>
       </ul>
 
       <div class="tab-content">
 
-        <!-- DASHBOARD -->
-        <div class="tab-pane fade show active" id="dashboard">
+        <!-- SERVIZI -->
+        <div class="tab-pane fade show active" id="servizi">
 
           <div class="row g-4">
 
-            <div class="col-xl-4 col-md-6">
+            <div class="col-md-6">
               <div class="card-wrapper">
-                <div class="card card-bg shadow-sm">
+                <div class="card card-teaser rounded shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">Registro di oggi</h5>
-                    <p class="card-text">Compila presenze e argomenti svolti.</p>
-                    <a href="#" class="btn btn-primary btn-sm">Apri registro</a>
+                    <h3 class="card-title h5">
+                      Registro elettronico
+                    </h3>
+                    <p class="card-text">
+                      Compila presenze, voti e argomenti svolti.
+                    </p>
+                    <a href="#" class="read-more">
+                      Accedi
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-4 col-md-6">
+            <div class="col-md-6">
               <div class="card-wrapper">
-                <div class="card card-bg shadow-sm">
+                <div class="card card-teaser rounded shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">Le mie classi</h5>
-                    <p class="card-text">Visualizza elenco studenti.</p>
-                    <a href="#" class="btn btn-primary btn-sm">Gestisci</a>
+                    <h3 class="card-title h5">
+                      Le mie classi
+                    </h3>
+                    <p class="card-text">
+                      Elenco studenti e situazione didattica.
+                    </p>
+                    <a href="#" class="read-more">
+                      Visualizza
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-4 col-md-6">
+            <div class="col-md-6">
               <div class="card-wrapper">
-                <div class="card card-bg shadow-sm">
+                <div class="card card-teaser rounded shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">
-                      Comunicazioni
-                      <span class="badge bg-danger ms-2">2</span>
-                    </h5>
-                    <p class="card-text">Nuovi messaggi dalla segreteria.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Leggi</a>
+                    <h3 class="card-title h5">
+                      Materiali didattici
+                    </h3>
+                    <p class="card-text">
+                      Carica e gestisci documenti per le classi.
+                    </p>
+                    <a href="#" class="read-more">
+                      Gestisci
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="col-xl-4 col-md-6">
+            <div class="col-md-6">
               <div class="card-wrapper">
-                <div class="card card-bg shadow-sm">
+                <div class="card card-teaser rounded shadow-sm">
                   <div class="card-body">
-                    <h5 class="card-title">Materiali didattici</h5>
-                    <p class="card-text">Carica o modifica file.</p>
-                    <a href="#" class="btn btn-outline-primary btn-sm">Accedi</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xl-4 col-md-6">
-              <div class="card-wrapper">
-                <div class="card card-bg shadow-sm">
-                  <div class="card-body">
-                    <h5 class="card-title">Scrutini</h5>
-                    <p class="card-text">Inserisci voti e giudizi.</p>
-                    <a href="#" class="btn btn-secondary btn-sm">Vai</a>
+                    <h3 class="card-title h5">
+                      Scrutini e valutazioni
+                    </h3>
+                    <p class="card-text">
+                      Inserisci voti e compila giudizi finali.
+                    </p>
+                    <a href="#" class="read-more">
+                      Accedi
+                    </a>
                   </div>
                 </div>
               </div>
@@ -142,33 +161,22 @@ permalink: /area-personale/
 
         </div>
 
-        <!-- REGISTRO -->
-        <div class="tab-pane fade" id="registro">
-          <div class="card card-bg">
-            <div class="card-body">
-              <h5 class="card-title">Registro elettronico</h5>
-              <p>Seleziona una classe e compila presenze, voti e argomenti svolti.</p>
-            </div>
+        <!-- ATTIVITÀ -->
+        <div class="tab-pane fade" id="attivita">
+          <div class="it-list-wrapper">
+            <h3 class="h5 mb-3">Attività recenti</h3>
+            <ul class="it-list">
+              <li>Registro compilato – Classe 2A</li>
+              <li>Caricato materiale – Storia</li>
+              <li>Letta comunicazione della segreteria</li>
+            </ul>
           </div>
         </div>
 
-        <!-- COMUNICAZIONI -->
-        <div class="tab-pane fade" id="comunicazioni">
-          <div class="card card-bg">
-            <div class="card-body">
-              <h5 class="card-title">Ultime comunicazioni</h5>
-              <ul class="list-unstyled mt-3">
-                <li class="mb-2">📌 Collegio docenti – 20 marzo</li>
-                <li class="mb-2">📌 Aggiornamento PTOF</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- SCRUTINI -->
-        <div class="tab-pane fade" id="scrutini">
+        <!-- NOTIFICHE -->
+        <div class="tab-pane fade" id="notifiche">
           <div class="alert alert-info">
-            Sessione scrutini non ancora aperta.
+            Nessuna nuova notifica.
           </div>
         </div>
 
