@@ -4,29 +4,39 @@ title: Area Personale
 permalink: /area-personale/
 ---
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container-fluid">
   <div class="row">
 
     <!-- SIDEBAR -->
-    <aside class="col-lg-3 col-md-4 bg-light vh-100 p-4 border-end">
+    <aside class="col-lg-3 col-md-4 border-end bg-light p-4">
 
-      <h5 class="mb-4">Menu</h5>
+      <h5 class="mb-4">Area personale</h5>
 
       <div class="list-group list-group-flush">
         <a href="#" class="list-group-item list-group-item-action active">
           Dashboard
         </a>
         <a href="#" class="list-group-item list-group-item-action">
-          Il mio profilo
+          Profilo
         </a>
         <a href="#" class="list-group-item list-group-item-action">
           Documenti
         </a>
         <a href="#" class="list-group-item list-group-item-action">
           Pagamenti
-        </a>
-        <a href="#" class="list-group-item list-group-item-action">
-          Prenotazioni
         </a>
         <a href="#" class="list-group-item list-group-item-action">
           Messaggi
@@ -38,86 +48,110 @@ permalink: /area-personale/
 
     </aside>
 
-    <!-- CONTENUTO PRINCIPALE -->
-    <main class="col-lg-9 col-md-8 p-5">
+    <!-- CONTENUTO -->
+    <main class="col-lg-9 col-md-8 p-4">
 
       <h2 class="mb-4">Benvenuto, Mario Rossi</h2>
 
-      <div class="row g-4">
+      <!-- NAVBAR A SCHEDE -->
+      <ul class="nav nav-tabs mb-4" id="areaTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#dashboard" type="button">
+            Dashboard
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#attivita" type="button">
+            Ultime attività
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#notifiche" type="button">
+            Notifiche
+          </button>
+        </li>
+      </ul>
 
-        <!-- Card -->
-        <div class="col-xl-4 col-md-6">
-          <div class="card-wrapper">
-            <div class="card card-bg shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">I miei documenti</h5>
-                <p class="card-text">Consulta certificati e pratiche.</p>
-                <a href="#" class="btn btn-primary btn-sm">Accedi</a>
+      <div class="tab-content">
+
+        <!-- DASHBOARD -->
+        <div class="tab-pane fade show active" id="dashboard">
+
+          <div class="row g-4">
+
+            <div class="col-xl-4 col-md-6">
+              <div class="card-wrapper">
+                <div class="card card-bg shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">I miei documenti</h5>
+                    <p class="card-text">Consulta certificati e pratiche attive.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Accedi</a>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+              <div class="card-wrapper">
+                <div class="card card-bg shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Pagamenti</h5>
+                    <p class="card-text">Storico e nuovi avvisi pagoPA.</p>
+                    <a href="#" class="btn btn-primary btn-sm">Gestisci</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+              <div class="card-wrapper">
+                <div class="card card-bg shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Messaggi
+                      <span class="badge bg-danger ms-2">3</span>
+                    </h5>
+                    <p class="card-text">Nuove comunicazioni ricevute.</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm">Leggi</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6">
+              <div class="card-wrapper">
+                <div class="card card-bg shadow-sm">
+                  <div class="card-body">
+                    <h5 class="card-title">Prenotazioni</h5>
+                    <p class="card-text">Gestisci appuntamenti e richieste.</p>
+                    <a href="#" class="btn btn-outline-primary btn-sm">Apri</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ATTIVITA -->
+        <div class="tab-pane fade" id="attivita">
+          <div class="card card-bg">
+            <div class="card-body">
+              <h5 class="card-title">Ultime attività</h5>
+              <ul class="list-unstyled mt-3">
+                <li class="mb-2">✔ Pagamento TARI completato</li>
+                <li class="mb-2">✔ Richiesta certificato inviata</li>
+                <li class="mb-2">✔ Nuovo messaggio ricevuto</li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <div class="col-xl-4 col-md-6">
-          <div class="card-wrapper">
-            <div class="card card-bg shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Pagamenti</h5>
-                <p class="card-text">Visualizza lo storico e paga online.</p>
-                <a href="#" class="btn btn-primary btn-sm">Gestisci</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-md-6">
-          <div class="card-wrapper">
-            <div class="card card-bg shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">
-                  Messaggi
-                  <span class="badge bg-danger ms-2">3</span>
-                </h5>
-                <p class="card-text">Nuove comunicazioni disponibili.</p>
-                <a href="#" class="btn btn-outline-primary btn-sm">Leggi</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-md-6">
-          <div class="card-wrapper">
-            <div class="card card-bg shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Prenotazioni</h5>
-                <p class="card-text">Gestisci appuntamenti attivi.</p>
-                <a href="#" class="btn btn-outline-primary btn-sm">Apri</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-md-6">
-          <div class="card-wrapper">
-            <div class="card card-bg shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Stato pratiche</h5>
-                <p class="card-text">Controlla l’avanzamento richieste.</p>
-                <a href="#" class="btn btn-secondary btn-sm">Verifica</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-4 col-md-6">
-          <div class="card-wrapper">
-            <div class="card card-bg shadow-sm">
-              <div class="card-body">
-                <h5 class="card-title">Impostazioni</h5>
-                <p class="card-text">Preferenze e sicurezza account.</p>
-                <a href="#" class="btn btn-secondary btn-sm">Modifica</a>
-              </div>
-            </div>
+        <!-- NOTIFICHE -->
+        <div class="tab-pane fade" id="notifiche">
+          <div class="alert alert-info">
+            Nessuna nuova notifica disponibile.
           </div>
         </div>
 
