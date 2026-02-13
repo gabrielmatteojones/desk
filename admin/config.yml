@@ -64,7 +64,7 @@ collections:
     extension: "md"
     format: "frontmatter"
     fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "public" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string", hint: "Esempio: /nome-pagina/" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
