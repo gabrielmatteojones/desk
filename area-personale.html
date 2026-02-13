@@ -4,89 +4,126 @@ title: Area Personale
 permalink: /area-personale/
 ---
 
-<div class="container my-5">
+<div class="container-fluid">
+  <div class="row">
 
-  <h2 class="mb-4">Area Personale</h2>
+    <!-- SIDEBAR -->
+    <aside class="col-lg-3 col-md-4 bg-light vh-100 p-4 border-end">
 
-  <div class="row g-4">
+      <h5 class="mb-4">Menu</h5>
 
-    <!-- Profilo -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg">
-          <div class="card-body">
-            <h5 class="card-title">Il mio profilo</h5>
-            <p class="card-text">Gestisci dati personali e contatti.</p>
-            <a href="#" class="btn btn-primary btn-sm">Accedi</a>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item list-group-item-action active">
+          Dashboard
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Il mio profilo
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Documenti
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Pagamenti
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Prenotazioni
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          Messaggi
+        </a>
+        <a href="#" class="list-group-item list-group-item-action text-danger">
+          Esci
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- CONTENUTO PRINCIPALE -->
+    <main class="col-lg-9 col-md-8 p-5">
+
+      <h2 class="mb-4">Benvenuto, Mario Rossi</h2>
+
+      <div class="row g-4">
+
+        <!-- Card -->
+        <div class="col-xl-4 col-md-6">
+          <div class="card-wrapper">
+            <div class="card card-bg shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">I miei documenti</h5>
+                <p class="card-text">Consulta certificati e pratiche.</p>
+                <a href="#" class="btn btn-primary btn-sm">Accedi</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Documenti -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg">
-          <div class="card-body">
-            <h5 class="card-title">I miei documenti</h5>
-            <p class="card-text">Consulta certificati e pratiche.</p>
-            <a href="#" class="btn btn-primary btn-sm">Visualizza</a>
+        <div class="col-xl-4 col-md-6">
+          <div class="card-wrapper">
+            <div class="card card-bg shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Pagamenti</h5>
+                <p class="card-text">Visualizza lo storico e paga online.</p>
+                <a href="#" class="btn btn-primary btn-sm">Gestisci</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Pagamenti -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg">
-          <div class="card-body">
-            <h5 class="card-title">Pagamenti</h5>
-            <p class="card-text">Storico pagamenti e avvisi.</p>
-            <a href="#" class="btn btn-primary btn-sm">Gestisci</a>
+        <div class="col-xl-4 col-md-6">
+          <div class="card-wrapper">
+            <div class="card card-bg shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Messaggi
+                  <span class="badge bg-danger ms-2">3</span>
+                </h5>
+                <p class="card-text">Nuove comunicazioni disponibili.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Leggi</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Prenotazioni -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg">
-          <div class="card-body">
-            <h5 class="card-title">Prenotazioni</h5>
-            <p class="card-text">Appuntamenti e richieste attive.</p>
-            <a href="#" class="btn btn-outline-primary btn-sm">Apri</a>
+        <div class="col-xl-4 col-md-6">
+          <div class="card-wrapper">
+            <div class="card card-bg shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Prenotazioni</h5>
+                <p class="card-text">Gestisci appuntamenti attivi.</p>
+                <a href="#" class="btn btn-outline-primary btn-sm">Apri</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Messaggi -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg">
-          <div class="card-body">
-            <h5 class="card-title">Messaggi</h5>
-            <p class="card-text">Comunicazioni e notifiche.</p>
-            <a href="#" class="btn btn-outline-primary btn-sm">Leggi</a>
+        <div class="col-xl-4 col-md-6">
+          <div class="card-wrapper">
+            <div class="card card-bg shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Stato pratiche</h5>
+                <p class="card-text">Controlla l’avanzamento richieste.</p>
+                <a href="#" class="btn btn-secondary btn-sm">Verifica</a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
 
-    <!-- Impostazioni -->
-    <div class="col-lg-4 col-md-6">
-      <div class="card-wrapper">
-        <div class="card card-bg">
-          <div class="card-body">
-            <h5 class="card-title">Impostazioni</h5>
-            <p class="card-text">Preferenze e sicurezza account.</p>
-            <a href="#" class="btn btn-secondary btn-sm">Modifica</a>
+        <div class="col-xl-4 col-md-6">
+          <div class="card-wrapper">
+            <div class="card card-bg shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">Impostazioni</h5>
+                <p class="card-text">Preferenze e sicurezza account.</p>
+                <a href="#" class="btn btn-secondary btn-sm">Modifica</a>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
-    </div>
+
+    </main>
 
   </div>
 </div>
