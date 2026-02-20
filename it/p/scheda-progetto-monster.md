@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Scheda Progetto Monster
-permalink: /schede/monster/
+permalink: /hh/schede/monster/
 ---
 
 *[H﻿ome](/) > [Schede](/schede/) > [Schede Pubbliche](/schede/?pubbliche)* > **Scheda Progetto Monster**
