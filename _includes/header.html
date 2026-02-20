@@ -84,9 +84,7 @@
       </a>
       <div class="dropdown-menu" role="region" aria-labelledby="{{ menu.id }}">
         <div class="link-list-wrapper">
-          <ul class="link-list">
-            <li><span>{{ menu.title }}</span></li>
-            <hr>
+          <ul class="link-list container">
             {% for link in menu.links %}
               {% if link.divider %}
                 <li><span class="divider"></span></li>
