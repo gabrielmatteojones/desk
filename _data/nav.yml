@@ -1,0 +1,43 @@
+- title: "DESK"
+  id: "deskDropdown"
+  links:
+    - title: "Home Desk"
+      url: "/desk/"
+    - title: "Utenza"
+      url: "/desk/usr/"
+    - title: "Amministrazione"
+      url: "/desk/amministrazione/"
+    - title: "FOIA Pannel"
+      url: "/desk/FOIA/"
+
+- title: "Schede"
+  id: "schedeDropdown"
+  links:
+    - title: "Home Desk"
+      url: "/desk/"
+
+- title: "Menu Dropdown"
+  id: "menuDropdown1"
+  links:
+    - title: "Link lista 1"
+      url: "#"
+    - title: "Link lista 2"
+      url: "#"
+    - title: "Link lista 3"
+      url: "#"
+    - divider: true
+    - title: "Link lista 4"
+      url: "#"
+
+- title: "Menu Dropdown"
+  id: "menuDropdown2"
+  links:
+    - title: "Link lista 1"
+      url: "#"
+    - title: "Link lista 2"
+      url: "#"
+    - title: "Link lista 3"
+      url: "#"
+    - divider: true
+    - title: "Link lista 4"
+      url: "#"
