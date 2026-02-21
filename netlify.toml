@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/*"
+  to = "/it/:splat"
+  status = 200
+  conditions = { Host = ["esempio2.it"] }
