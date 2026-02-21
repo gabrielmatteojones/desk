@@ -3,4 +3,6 @@ layout: default
 title: Affari Istituzionali & Beni pubblici
 permalink: /affari-istituzionali--beni-pubblici/
 ---
-C﻿om
+Sezione "Affari Istituzionali & Beni pubblici"
+
+  {% include docs.html %}
