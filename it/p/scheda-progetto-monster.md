@@ -3,7 +3,6 @@ layout: base
 title: Scheda Progetto Monster
 permalink: /hh/schede/monster/
 ---
-
 *[H﻿ome](/) > [Schede](/schede/) > [Schede Pubbliche](/schede/?pubbliche)* > **Scheda Progetto Monster**
 
 # **S﻿cheda Progetto Monster**
@@ -14,11 +13,10 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
 
 **[Documento pre-progettuale](/schede/monster/allegati/ideazioneprogettuale.pdf)**: Documento contenente l'intera ideazione del progetto
 
-**[Documento Documento Illustrazioni](/schede/monster/allegati/illustrazioni_AI.pdf)**: Illustrazioni realizzate con Adobe Illustrator
+**[Documento Documento Illustrazioni](https://drive.google.com/file/d/1fZjyGgzwjxeNInxYpycDXpJKVJJmGUp5/view?usp=sharing)**: Illustrazioni realizzate con Adobe Illustrator
 
 **[Documento brand](/schede/monster/allegati/documentobrand.pdf)**: Documento con le idee per la brand identity contenente informazioni & loghi
 
-
 **[Documento Mockup](/schede/monster/allegati/Mockup.pdf)**: Mockup Progetto
 
-**[CARTELLA GOOGLE DRIVE GABRIEL.JONES@BIBLIOTECHEFVG.IT](https://drive.google.com/drive/folders/1MdjIIYr0-mH8BKVxSTiFvEM3DIGkagtH?usp=sharing)**: Cartella Google drive
+**[CARTELLA GOOGLE DRIVE GABRIEL.JONES@BIBLIOTECHEFVG.IT](https://drive.google.com/drive/folders/1MdjIIYr0-mH8BKVxSTiFvEM3DIGkagtH?usp=drive_link)**: Cartella Google drive
