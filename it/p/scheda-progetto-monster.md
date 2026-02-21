@@ -2,15 +2,18 @@
 layout: base
 title: Scheda Progetto Monster
 permalink: /hh/schede/monster/
+
 allegati:
-  - name: esempio 1
-    url: esempio1.pdf
-  - name: esempio 2
-    url: esempio2.pdf
-  - name: esempio 3
-    url: esempio3.pdf
-  - name: esempio 4
-    url: esempio4.pdf
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+  - name: Bilancio Economico
+    file: bilancio.xlsx
+    description: Piano economico dettagliato
+  - name: Richiesta Contributo
+    file: richiesta.docx
+  - name: Presentazione Ufficiale
+    file: presentazione.pdf
 ---
 
 *[H﻿ome](/) > [Schede](/schede/) > [Schede Pubbliche](/schede/?pubbliche)* > **Scheda Progetto Monster**
@@ -30,7 +33,6 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
 
 **[Documento Mockup](/schede/monster/allegati/Mockup.pdf)**: Mockup Progetto
 
-**[CARTELLA GOOGLE DRIVE GABRIEL.JONES@BIBLIOTECHEFVG.IT](https://drive.google.com/drive/folders/1MdjIIYr0-mH8BKVxSTiFvEM3DIGkagtH?usp=sharing)**: Cartella Google drive
 
 
-
+  {% include docs.html %}

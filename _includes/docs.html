@@ -1,9 +1,9 @@
+{% assign docs = page.allegati | sort: "name" %}
+{% assign count = docs | size %}
+
 <div class="bg-grey-card py-5">
   <div class="container">
     <h2 class="title-xxlarge mb-4">Esplora i documenti</h2>
-
-    {% assign docs = page.allegati | sort: "name" %}
-    {% assign count = docs | size %}
 
     <p class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40">
       {{ count }} documenti trovati in ordine alfabetico
@@ -11,6 +11,20 @@
 
     <div class="row g-4">
       {% for doc in docs %}
+
+      {% assign ext = doc.file | split: '.' | last | downcase %}
+
+      {% case ext %}
+        {% when "pdf" %}
+          {% assign icon = "it-file-pdf" %}
+        {% when "doc" or "docx" %}
+          {% assign icon = "it-file" %}
+        {% when "xls" or "xlsx" %}
+          {% assign icon = "it-file" %}
+        {% else %}
+          {% assign icon = "it-file" %}
+      {% endcase %}
+
       <div class="col-md-6 col-xl-4">
         <div class="card-wrapper border border-light rounded shadow-sm pb-0">
           <div class="card no-after rounded">
@@ -18,23 +32,30 @@
 
               <div class="categoryicon-top">
                 <svg class="icon icon-sm" aria-hidden="true">
-                  <use href="{{ site.url }}/sprites.svg#it-file"></use>
+                  <use href="{{ site.url }}/sprites.svg#{{ icon }}"></use>
                 </svg>
                 <span class="text fw-semibold">
-                  <span class="category text-decoration-none">
-                    Documento
-                  </span>
+                  Documento
                 </span>
               </div> 
 
-              <a href="{{ site.url }}/docs/{{ doc.url | relative_url }}" class="text-decoration-none">
+              <a href="/assets/allegati/{{ page.permalink | split:'/' | last }}/{{ doc.file }}" 
+                 class="text-decoration-none" 
+                 target="_blank">
                 <h3 class="card-title h4">{{ doc.name }}</h3>
               </a>
+
+              {% if doc.description %}
+                <p class="text-secondary mb-0">
+                  {{ doc.description }}
+                </p>
+              {% endif %}
 
             </div>
           </div>
         </div>
       </div>
+
       {% endfor %}
     </div>
 
@@ -43,6 +64,5 @@
         Nessun risultato
       </p>
     {% endif %}
-
   </div>
 </div>
