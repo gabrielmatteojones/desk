@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Scheda Progetto Monster
-permalink: /it/
+permalink: https://polo18f.netlify.app/
 
 allegati:
   - name: Documento Pre Progettuale
