@@ -2,4 +2,4 @@
   from = "/*"
   to = "/it/:splat"
   status = 200
-  conditions = { Host = ["esempio2.it"] }
+  conditions = { Host = ["polo18f.netlify.app"] }
