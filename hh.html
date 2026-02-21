@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header Grafico</title>
+  <title>Header Responsive Corretto</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
@@ -11,60 +11,58 @@
     .custom-header {
       background-color: #CE3A1A;
       color: white;
-      padding: 2rem 0; /* più respiro verticale */
       text-align: center;
       position: relative;
       font-family: 'Arial Black', sans-serif;
+      padding: 2rem 0 1rem 0;
     }
 
-    /* Linea sottostante più spessa */
-    .custom-header::after {
-      content: "";
-      display: block;
-      height: 9px; /* linea più spessa */
-      width: 100%;
-      background-color: #D4A017; /* colore senape */
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    /* Titolo più grande */
     .custom-header h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
       letter-spacing: 2px;
     }
 
-    /* Link sotto il titolo più grandi e impattanti */
-    .header-links {
-      margin-top: 1rem;
+    /* Linea sottostante */
+    .custom-header::after {
+      content: "";
+      display: block;
+      height: 6px;
+      width: 100%;
+      background-color: #D4A017;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
-    .header-links a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-size: 1.25rem; /* link più grandi */
+    /* Navbar link */
+    .custom-navbar .nav-link {
+      color: white !important;
+      font-size: 1.25rem;
       font-weight: bold;
-      padding: 0.25rem 0.5rem;
       transition: all 0.2s ease-in-out;
     }
 
-    .header-links a:hover {
-      color: #FFD966; /* variante chiara senape */
-      transform: scale(1.1); /* effetto leggero al passaggio del mouse */
+    .custom-navbar .nav-link:hover {
+      color: #FFD966 !important;
+      transform: scale(1.1);
     }
 
-    /* Responsive: riduce leggermente titolo e link su schermi piccoli */
+    /* Hamburger button styling */
+    .navbar-toggler {
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    /* Mobile adjustments */
     @media (max-width: 768px) {
       .custom-header h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
 
-      .header-links a {
+      .custom-navbar .nav-link {
         font-size: 1rem;
-        margin: 0 0.5rem;
       }
     }
   </style>
@@ -73,13 +71,27 @@
 
   <header class="custom-header">
     <h1>Il Mio Header</h1>
-    <div class="header-links">
-      <a href="#">Home</a>
-      <a href="#">Chi Siamo</a>
-      <a href="#">Servizi</a>
-      <a href="#">Portfolio</a>
-      <a href="#">Contatti</a>
-    </div>
+
+    <!-- Navbar Bootstrap -->
+    <nav class="navbar navbar-expand-md custom-navbar">
+      <div class="container justify-content-center">
+        <!-- Hamburger -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+
+        <!-- Link -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarLinks">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Chi Siamo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Servizi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
 
   <!-- Bootstrap JS -->
