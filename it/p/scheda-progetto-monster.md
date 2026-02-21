@@ -8,15 +8,642 @@ allegati:
     file: ideazioneprogettuale.pdf
     description: Documento di pianificazione iniziale
     status: pubblico
-  - name: Bilancio Economico
-    file: bilancio.xlsx
-    description: Piano economico dettagliato
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
     status: pubblico
-  - name: Richiesta Contributo
-    file: richiesta.docx
-  - name: Presentazione Ufficiale
-    file: presentazione.pdf
-    status: archiviato
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
+  - name: Documento Pre Progettuale
+    file: ideazioneprogettuale.pdf
+    description: Documento di pianificazione iniziale
+    status: pubblico
 ---
 
 *[H﻿ome](/) > [Schede](/schede/) > [Schede Pubbliche](/schede/?pubbliche)* > **Scheda Progetto Monster**
