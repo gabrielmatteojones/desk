@@ -1,0 +1,25 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: "images"
+public_folder: "/images"
+
+site_url: ""
+logo_url: "/stemma_amministrazione_gabrieljones.png"
+
+collections:
+  - name: "Atto"
+    label: "Atti"
+    folder: "_atti"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "foia" }
+      - { label: "Nome Atto", name: "title", widget: "string" }
+      - { label: "Data Pubblicazione", name: "date", widget: "datetime" }
+      - { label: "Data Conclusione", name: "date", widget: "datetime" }
+      - { label: "Documento", name: "document_file", widget: "file" }
+      - { label: "Cattegoria Atto", name: "categories", widget: "select", multiple: true, options: ["Atto", "Delibera", "Personale", "Comunicazione", "Altro"] }
