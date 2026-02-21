@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Header Responsive con Dropdown</title>
+  <title>Header Moderno con Login</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
     /* Header principale */
     .custom-header {
@@ -13,7 +14,7 @@
       color: white;
       position: relative;
       font-family: 'Arial Black', sans-serif;
-      padding: 1rem 1rem 1rem 1rem;
+      padding: 1rem 2rem 1rem 2rem;
     }
 
     /* Linea sottostante */
@@ -28,6 +29,14 @@
       left: 0;
     }
 
+    /* Titolo centrato */
+    .header-title {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      margin: 0;
+      text-align: center;
+    }
+
     /* Navbar link */
     .custom-navbar .nav-link,
     .custom-navbar .dropdown-toggle {
@@ -35,29 +44,41 @@
       font-size: 1.2rem;
       font-weight: bold;
       transition: all 0.2s ease-in-out;
+      margin: 0 0.5rem;
+      padding: 0.5rem 0;
+      position: relative;
     }
 
-    .custom-navbar .nav-link:hover,
-    .custom-navbar .dropdown-menu .dropdown-item:hover {
-      color: #FFD966 !important;
-      transform: scale(1.05);
+    /* Hover con underline animata */
+    .custom-navbar .nav-link::after,
+    .custom-navbar .dropdown-toggle::after {
+      content: "";
+      display: block;
+      height: 2px;
+      background: #FFD966;
+      width: 0;
+      transition: width 0.3s;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
 
-    /* Hamburger a sinistra */
-    .navbar-toggler {
-      border: none;
-      font-size: 1.5rem;
-      color: white;
+    .custom-navbar .nav-link:hover::after,
+    .custom-navbar .dropdown-toggle:hover::after {
+      width: 100%;
     }
 
-    /* Dropdown menu stile */
+    /* Dropdown menu */
     .dropdown-menu {
       background-color: #CE3A1A;
+      border: none;
+      padding: 0.5rem 0;
     }
 
     .dropdown-menu .dropdown-item {
       color: white;
       font-weight: bold;
+      transition: all 0.2s;
     }
 
     .dropdown-menu .dropdown-item:hover {
@@ -65,84 +86,116 @@
       background-color: transparent;
     }
 
-    /* Titolo e navbar flex */
-    .header-content {
+    /* Hamburger mobile */
+    .navbar-toggler {
+      border: none;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    /* Login icon */
+    .login-icon {
+      color: white;
+      font-size: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .login-icon:hover {
+      color: #FFD966;
+      transform: scale(1.2);
+    }
+
+    /* Flex layout */
+    .header-container {
       display: flex;
       align-items: center;
-      justify-content: center;
-      gap: 1rem;
+      justify-content: space-between;
       flex-wrap: wrap;
     }
 
-    /* Titolo grande */
-    .header-content h1 {
-      font-size: 2.5rem;
-      margin: 0;
-      letter-spacing: 2px;
+    /* Navbar container centrata */
+    .custom-navbar {
+      margin-top: 1rem;
     }
 
-    /* Responsive adjustments */
-    @media (max-width: 768px) {
-      .header-content h1 {
-        font-size: 1.8rem;
+    /* Desktop: hamburger hidden */
+    @media (min-width: 768px) {
+      .navbar-toggler {
+        display: none;
+      }
+      .header-title {
+        flex: 1;
         text-align: center;
       }
+    }
+
+    /* Mobile: layout */
+    @media (max-width: 767px) {
       .custom-navbar .nav-link,
       .custom-navbar .dropdown-toggle {
         font-size: 1rem;
+      }
+      .header-title {
+        flex: 1;
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0 1rem;
       }
     }
   </style>
 </head>
 <body>
 
-  <header class="custom-header">
-    <div class="header-content">
-      <!-- Hamburger -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
-        &#9776;
-      </button>
+<header class="custom-header">
+  <div class="header-container">
+    <!-- Hamburger mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false" aria-label="Toggle navigation">
+      &#9776;
+    </button>
 
-      <!-- Titolo -->
-      <h1>Il Mio Header</h1>
-    </div>
+    <!-- Titolo -->
+    <h1 class="header-title">Il Mio Header</h1>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md custom-navbar mt-3">
-      <div class="container justify-content-center">
-        <div class="collapse navbar-collapse" id="navbarLinks">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+    <!-- Login icon -->
+    <a href="#" class="login-icon"><i class="fas fa-user"></i></a>
+  </div>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Chi Siamo
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Team</a></li>
-                <li><a class="dropdown-item" href="#">Mission</a></li>
-              </ul>
-            </li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md custom-navbar">
+    <div class="container justify-content-center">
+      <div class="collapse navbar-collapse" id="navbarLinks">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Servizi
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Web Design</a></li>
-                <li><a class="dropdown-item" href="#">Marketing</a></li>
-              </ul>
-            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Chi Siamo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Team</a></li>
+              <li><a class="dropdown-item" href="#">Mission</a></li>
+            </ul>
+          </li>
 
-            <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
-          </ul>
-        </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servizi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Web Design</a></li>
+              <li><a class="dropdown-item" href="#">Marketing</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+        </ul>
       </div>
-    </nav>
-  </header>
+    </div>
+  </nav>
+</header>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
