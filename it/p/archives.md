@@ -22,6 +22,11 @@ allegati:
 
 # **S﻿cheda Archivio Corrente**
 
-Scheda
+## In Merito
+Un archivio personale è *l'insieme organico di documenti — come lettere, diari, fotografie, file digitali, contratti e memorie — creati, ricevuti e accumulati da un individuo nel corso della propria vita o attività*. Funge da memoria storica e documentazione probatoria della propria identità e storia personale. 
+
+## Accesso Alla Libreria
+L'accesso alla libreria è *limitato agli utenti loggati con i servizi 18F*, e la libreria continene documenti d'archivio, di organizzazione, foto, video e altri elementi vari.
+
 
   {% include docs.html %}
