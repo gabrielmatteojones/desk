@@ -40,7 +40,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   
                   <span class="autocomplete-icon" aria-hidden="true">
                     <svg class="icon icon-sm icon-primary">
-                      <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-search"></use>
+                      <use href="{{ site.url }}/sprites.svg#it-search"></use>
                     </svg>
                   </span>
                 </div>
@@ -55,7 +55,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   <div class="card-body rounded-top">
                     <div class="categoryicon-top">
                       <svg class="icon icon-sm" aria-hidden="true">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                        <use href="{{ site.url }}/sprites.svg#it-file"></use>
                       </svg>
                       <span class="text fw-semibold">
                         <a class="category text-decoration-none" href="#">Modulistica</a>
@@ -75,7 +75,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   <div class="card-body rounded-top">
                     <div class="categoryicon-top">
                       <svg class="icon icon-sm" aria-hidden="true">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                        <use href="{{ site.url }}/sprites.svg#it-file"></use>
                       </svg>
                       <span class="text fw-semibold">
                         <a class="category text-decoration-none" href="#">Atto normativo</a>
@@ -95,7 +95,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   <div class="card-body rounded-top">
                     <div class="categoryicon-top">
                       <svg class="icon icon-sm" aria-hidden="true">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                        <use href="{{ site.url }}/sprites.svg#it-file"></use>
                       </svg>
                       <span class="text fw-semibold">
                         <a class="category text-decoration-none" href="#">Documento Albro Pretorio</a>
@@ -118,7 +118,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   <div class="card-body rounded-top">
                     <div class="categoryicon-top">
                       <svg class="icon icon-sm" aria-hidden="true">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                        <use href="{{ site.url }}/sprites.svg#it-file"></use>
                       </svg>
                       <span class="text fw-semibold">
                         <a class="category text-decoration-none" href="#">Modulistica</a>
@@ -138,7 +138,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   <div class="card-body rounded-top">
                     <div class="categoryicon-top">
                       <svg class="icon icon-sm" aria-hidden="true">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                        <use href="{{ site.url }}/sprites.svg#it-file"></use>
                       </svg>
                       <span class="text fw-semibold">
                         <a class="category text-decoration-none" href="#">Atto normativo</a>
@@ -158,7 +158,7 @@ Con il Progetto Monster si propone la realizzazione dell’elaborato finale di q
                   <div class="card-body rounded-top">
                     <div class="categoryicon-top">
                       <svg class="icon icon-sm" aria-hidden="true">
-                        <use href="../assets/bootstrap-italia/dist/svg/sprites.svg#it-file"></use>
+                        <use href="{{ site.url }}/sprites.svg#it-file"></use>
                       </svg>
                       <span class="text fw-semibold">
                         <a class="category text-decoration-none" href="#">Documento Albro Pretorio</a>
