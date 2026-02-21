@@ -1,0 +1,48 @@
+<div class="bg-grey-card py-5">
+  <div class="container">
+    <h2 class="title-xxlarge mb-4">Esplora i documenti</h2>
+
+    {% assign docs = page.allegati | sort: "name" %}
+    {% assign count = docs | size %}
+
+    <p class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40">
+      {{ count }} documenti trovati in ordine alfabetico
+    </p>
+
+    <div class="row g-4">
+      {% for doc in docs %}
+      <div class="col-md-6 col-xl-4">
+        <div class="card-wrapper border border-light rounded shadow-sm pb-0">
+          <div class="card no-after rounded">
+            <div class="card-body rounded-top">
+
+              <div class="categoryicon-top">
+                <svg class="icon icon-sm" aria-hidden="true">
+                  <use href="{{ site.url }}/sprites.svg#it-file"></use>
+                </svg>
+                <span class="text fw-semibold">
+                  <span class="category text-decoration-none">
+                    Documento
+                  </span>
+                </span>
+              </div> 
+
+              <a href="{{ site.url }}/docs/{{ doc.url | relative_url }}" class="text-decoration-none">
+                <h3 class="card-title h4">{{ doc.name }}</h3>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if count == 0 %}
+      <p class="text-center text-paragraph-regular-medium mt-4 mb-0">
+        Nessun risultato
+      </p>
+    {% endif %}
+
+  </div>
+</div>
