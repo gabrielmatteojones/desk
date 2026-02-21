@@ -36,7 +36,7 @@ plugins:
   - jekyll-feed
 buk: https://gabrielmatteojones.github.io/
 
-img: https://www.comune.trieste.it/media/categories/masterdata/images/Cultura_dFJRHej.jpg.1800x1350_q85_crop.jpg
+img: /images/tavola-disegno-1.svg
 
 # Exclude from processing.
 # The following items will not be processed, by default.
