@@ -1,3 +1,1 @@
-# Se il dominio è progettoesempio.it, manda tutto su /progettoesempio/
-
-polo18f.netlify.app*  /it/:splat  200!
+https://polo18f.netlify.app/*   /it/:splat   200!
