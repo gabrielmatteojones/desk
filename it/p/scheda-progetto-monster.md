@@ -12,6 +12,10 @@ allegati:
     file: /hh/illustrazioni_AI.pdf
     description: Documento contenente la libreria delle illustrazioni
     status: pubblico
+  - name: Compito classroom
+    file: https://classroom.google.com/c/ODQ1NTUwMTM3OTI3/m/ODQ1NTUxMDE5Nzgw/details
+    description: Argomento classroom
+    status: non condiviso
 ---
 
 *[H﻿ome](/) > [Schede](/schede/) > [Schede Pubbliche](/schede/?pubbliche)* > **Scheda Progetto Monster**
