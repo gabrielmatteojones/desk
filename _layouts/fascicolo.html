@@ -1,0 +1,122 @@
+---
+layout: default
+---
+
+<div class="container" id="main-container">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+
+      <!-- Breadcrumb -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb p-0">
+          <li class="breadcrumb-item">
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <span class="separator">/</span>
+          </li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Fascicoli /
+          </li>
+        </ol>
+      </nav>
+
+      <!-- Heading -->
+      <div class="pb-3 pb-lg-4">
+        <h1 class="title-xxxlarge">{{ page.title }}</h1>
+        <p class="subtitle-small">CF: {{ page.cf }}</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- INFORMAZIONI FASCICOLO -->
+  <section class="it-page-section mb-5">
+    <div class="card p-4 drop-shadow">
+      <h2 class="title-xxlarge mb-3">Informazioni Fascicolo</h2>
+
+      <p>
+        <strong>Nome Fascicolo:</strong> {{ page.fascicolo.nome }} <br>
+        <strong>Ultima Modifica:</strong> {{ page.fascicolo.ultima_modifica }} <br>
+        <strong>Archiviato:</strong> {{ page.fascicolo.archiviato }} <br>
+        <strong>Documenti:</strong> {{ page.fascicolo.documenti }} <br>
+      </p>
+    </div>
+  </section>
+
+  <!-- DOCUMENTI CORRENTI -->
+  <section class="it-page-section mb-5">
+    <h2 class="title-xxlarge">Documenti</h2>
+
+    <div class="accordion" id="accordion-documenti">
+      {% for doc in page.documenti %}
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#doc-{{ forloop.index }}">
+            {{ doc.titolo }}
+            <span class="ms-auto small">{{ doc.stato }}</span>
+          </button>
+          <p class="accordion-date mb-0">{{ doc.data }}</p>
+        </div>
+
+        <div id="doc-{{ forloop.index }}"
+             class="accordion-collapse collapse"
+             data-bs-parent="#accordion-documenti">
+          <div class="accordion-body">
+
+            <p><strong>Pratica:</strong> {{ doc.pratica }}</p>
+
+            {% if doc.servizio %}
+            <a href="{{ doc.servizio }}">Scheda servizio</a><br>
+            {% endif %}
+
+            {% if doc.files %}
+            <ul>
+              {% for file in doc.files %}
+              <li>
+                <a href="{{ file.url }}">{{ file.nome }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- DOCUMENTI ARCHIVIATI -->
+  {% if page.archiviati %}
+  <section class="it-page-section mb-5">
+    <h2 class="title-xxlarge">Documenti Archiviati</h2>
+
+    <div class="accordion" id="accordion-archiviati">
+      {% for doc in page.archiviati %}
+      <div class="accordion-item">
+        <div class="accordion-header">
+          <button class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#arch-{{ forloop.index }}">
+            {{ doc.titolo }}
+          </button>
+          <p class="accordion-date mb-0">{{ doc.data }}</p>
+        </div>
+
+        <div id="arch-{{ forloop.index }}"
+             class="accordion-collapse collapse"
+             data-bs-parent="#accordion-archiviati">
+          <div class="accordion-body">
+            <p><strong>Pratica:</strong> {{ doc.pratica }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+</div>
