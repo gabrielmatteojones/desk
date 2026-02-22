@@ -36,6 +36,11 @@ plugins:
   - jekyll-feed
 buk: https://gabrielmatteojones.github.io/
 
+collections:
+  fascicoli:
+    output: true
+    permalink: /fascicolo/:cf/
+
 img: /images/tavola-disegno-1.svg
 
 # Exclude from processing.
