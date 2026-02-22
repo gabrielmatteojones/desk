@@ -5,11 +5,39 @@
   <div class="container">
     <h2 class="title-xxlarge mb-4">Esplora i documenti</h2>
 
-    <p class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40">
-      {{ count }} documenti trovati in ordine alfabetico
-    </p>
+    <!-- 🔎 Barra di ricerca -->
+    <div class="cmp-input-search mb-4">
+      <div class="form-group autocomplete-wrapper mb-0">
+        <div class="input-group">
+          <label for="search-docs" class="visually-hidden active">Cerca</label>
+          
+          <input type="search"
+                 id="search-docs"
+                 class="form-control"
+                 placeholder="Cerca per parola chiave">
 
-    <div class="row g-4">
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button" id="search-button">
+              Invio
+            </button>
+          </div>
+
+          <span class="autocomplete-icon" aria-hidden="true">
+            <svg class="icon icon-sm icon-primary">
+              <use href="{{ site.url }}/sprites.svg#it-search"></use>
+            </svg>
+          </span>
+        </div>
+
+        <p id="results-count"
+           class="u-grey-light text-paragraph-card mt-2 mb-30 mt-lg-3 mb-lg-40">
+          {{ count }} documenti trovati in ordine alfabetico
+        </p>
+      </div>
+    </div>
+
+    <!-- 📄 Lista documenti -->
+    <div class="row g-4" id="documents-list">
       {% for doc in docs %}
 
       {% assign ext = doc.file | split: '.' | last | downcase %}
@@ -25,22 +53,24 @@
           {% assign icon = "it-file" %}
       {% endcase %}
 
-      <div class="col-md-6 col-xl-4">
+      <div class="col-md-6 col-xl-4 document-item"
+           data-name="{{ doc.name | downcase }}"
+           data-description="{{ doc.description | downcase }}">
         <div class="card-wrapper border border-light rounded shadow-sm pb-0">
           <div class="card no-after rounded">
             <div class="card-body rounded-top">
 
               <div class="categoryicon-top">
                 <svg class="icon icon-sm" aria-hidden="true">
-                  <use href="{{ site.url }}/sprites.svg#it-file"></use>
+                  <use href="{{ site.url }}/sprites.svg#{{ icon }}"></use>
                 </svg>
                 <span class="text fw-semibold">
                   Documento {{ doc.status }}
                 </span>
-              </div> 
+              </div>
 
-              <a href="{{ doc.file }}" 
-                 class="text-decoration-none" 
+              <a href="{{ doc.file }}"
+                 class="text-decoration-none"
                  target="_blank">
                 <h3 class="card-title h4">{{ doc.name }}</h3>
               </a>
@@ -59,10 +89,44 @@
       {% endfor %}
     </div>
 
-    {% if count == 0 %}
-      <p class="text-center text-paragraph-regular-medium mt-4 mb-0">
-        Nessun risultato
-      </p>
-    {% endif %}
+    <p id="no-results"
+       class="text-center text-paragraph-regular-medium mt-4 mb-0 d-none">
+      Nessun risultato
+    </p>
+
   </div>
 </div>
+
+<!-- 🔎 Script filtro -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("search-docs");
+  const button = document.getElementById("search-button");
+  const documents = document.querySelectorAll(".document-item");
+  const countText = document.getElementById("results-count");
+  const noResults = document.getElementById("no-results");
+
+  function filterDocs() {
+    const query = input.value.toLowerCase();
+    let visible = 0;
+
+    documents.forEach(doc => {
+      const name = doc.dataset.name || "";
+      const description = doc.dataset.description || "";
+
+      if (name.includes(query) || description.includes(query)) {
+        doc.style.display = "";
+        visible++;
+      } else {
+        doc.style.display = "none";
+      }
+    });
+
+    countText.textContent = visible + " documenti trovati";
+    noResults.classList.toggle("d-none", visible !== 0);
+  }
+
+  input.addEventListener("keyup", filterDocs);
+  button.addEventListener("click", filterDocs);
+});
+</script>
