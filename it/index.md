@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: default
 title: Scheda Progetto Monster
 permalink: /it/
 
