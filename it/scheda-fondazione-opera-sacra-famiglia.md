@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Scheda Fondazione Opera Sacra Famiglia
 permalink: /schede/osf/
 ---
