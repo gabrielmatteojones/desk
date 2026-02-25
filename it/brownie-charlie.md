@@ -1,5 +1,5 @@
 ---
-layout: public
+layout: default
 title: Charlie Brownie
 permalink: /schede/cbs/
 ---
