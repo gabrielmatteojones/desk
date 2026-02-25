@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Esame Pedagogia - Area Socio Educativa
 permalink: /areasocioeducativa/esamepedagogia/
 ---
