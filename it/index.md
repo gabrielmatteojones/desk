@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Scheda Progetto Monster
-permalink: /it/
+permalink: /desk/monster/
 
 allegati:
   - name: Documento Pre Progettuale
