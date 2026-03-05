@@ -2,11 +2,11 @@
 layout: base
 title: Scheda Progetto Monster
 permalink: /hh/schede/monster/
-
 allegati:
   - name: Documento Pre Progettuale
     file: /hh/ideazioneprogettuale.pdf
-    description: Il documento pre progettuale, è il documento che definisce gli obiettivi e le informazioni iniziali del progetto.
+    description: Il documento pre progettuale, è il documento che definisce gli
+      obiettivi e le informazioni iniziali del progetto.
     status: pubblico
   - name: Illustrazioni
     file: /hh/illustrazioni_AI.pdf
@@ -16,6 +16,10 @@ allegati:
     file: https://classroom.google.com/c/ODQ1NTUwMTM3OTI3/m/ODQ1NTUxMDE5Nzgw/details
     description: Argomento classroom
     status: non condiviso
+  - file: https://bw.jareads.org/images/poster-fruity-revenge-sale-on-fruits-you-can-t-resist-.png
+    description: File Fragola Assassina
+    name: File Fragola Assassina
+    status: pubblico
 ---
 
 *[H﻿ome](/) > [Schede](/schede/) > [Schede Pubbliche](/schede/?pubbliche)* > **Scheda Progetto Monster**
