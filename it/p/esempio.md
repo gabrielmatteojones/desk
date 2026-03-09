@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: library
 title: Esempio
 permalink: /esmepio/
 allegati:
