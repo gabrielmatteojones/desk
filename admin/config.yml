@@ -68,6 +68,20 @@ collections:
       - { label: "Titolo", name: "title", widget: "string" }
       - { label: "Permalink", name: "permalink", widget: "string", hint: "Esempio: /nome-pagina/" }
       - { label: "Contenuto", name: "body", widget: "markdown" }
+
+  - name: "libreria"
+    label: "Libreria"
+    label_singular: "libreria"
+    folder: "it/p"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "libreria" }
+      - { label: "Titolo", name: "title", widget: "string" }
+      - { label: "Permalink", name: "permalink", widget: "string", hint: "Esempio: /nome-pagina/" }
+      - { label: "Contenuto", name: "body", widget: "markdown" }
       - label: "Allegati"
         name: "allegati"
         widget: "list"
